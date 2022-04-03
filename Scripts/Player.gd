@@ -1,13 +1,20 @@
 extends KinematicBody2D
 
-enum {ACTIVE, REPAIRING, DRAGGING}
+enum {ACTIVE, REPAIRING, DRAGGING,DEAD}
 var state
+
+var mud_factor = 1.0 #Slows player down
+var water_level = 0.0 #Slows player down
+
+var dead_safety = false
 
 var drag_left = false #for log dragging
 
 var motion = Vector2(0,0)
-var acceleration = 40
+var  acceleration = 40
+var  base_acceleration = 40
 var drag_acceleration = 20
+var  base_drag_acceleration = 20
 
 var carrying_plank = false
 
@@ -20,7 +27,7 @@ var dragged_log = null #log being dragged
 var active = true
 
 signal DropPlank
-
+signal Footprint
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -28,14 +35,29 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	#Slowdown due to mud
+	mud_factor = 1.0 - (.4 * water_level / 100.0)
+	acceleration = base_acceleration * mud_factor
+	drag_acceleration = base_drag_acceleration * mud_factor
+	
+	if dead_safety and state != DEAD:
+		die()
 
 
 func _physics_process(delta):
 	
 	if motion.length() > 40.0:
 		motion = motion.normalized() * 40.0
+	
+	if motion.length() > 1.0:
+		if water_level > 30:
+			$MudParticles.emitting = true
+		if water_level > 75:
+			$WaterParticles.emitting = true
+	else:
+		$MudParticles.emitting = false
+		$WaterParticles.emitting = false
 	
 	motion = move_and_slide(motion)
 	
@@ -88,7 +110,6 @@ func _input(event):
 							carrying_plank = false
 					else:
 						if plank_pickup and plank_pickup.is_in_group("Maker"):
-							print("Hi")
 							plank_pickup.num_planks += 1
 							carrying_plank = false
 						else: #Put down plank
@@ -120,6 +141,14 @@ func _input(event):
 					dragged_log = null
 					
 					state = ACTIVE
+
+
+func die():
+	state = DEAD
+	$PlayerSprite.play("Dead")
+	$Shadow.hide()
+	motion = Vector2(0,0)
+	dead_safety = true
 
 
 func log_to_plank():
@@ -205,6 +234,7 @@ func _on_PlayerSprite_frame_changed(): #Sound Effects
 	if $PlayerSprite.animation == "Run" or $PlayerSprite.animation == "PlankRun":
 		if $PlayerSprite.frame == 0  or $PlayerSprite.frame == 4:
 			$FootSteps.play()
+			emit_signal("Footprint")
 	
 	if $PlayerSprite.animation == "LogPull":
 		if !$LogDrag.is_playing():
@@ -212,5 +242,6 @@ func _on_PlayerSprite_frame_changed(): #Sound Effects
 			$LogDrag.play()
 		if $PlayerSprite.frame == 0  or $PlayerSprite.frame == 3:
 			$FootSteps.play()
+			emit_signal("Footprint")
 	else:
 		$LogDrag.stop()

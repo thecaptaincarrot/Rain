@@ -3,6 +3,9 @@ extends AnimatedSprite
 export var damage = 0
 
 var game_over = false
+var eligible = true
+
+signal Bust
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -21,32 +24,66 @@ func damage_handler(): #animation and any other checks
 			play("Damage0")
 			if !$DamageTimer.is_stopped():
 				$DamageTimer.stop()
+			$Danger1.hide()
+			$Danger2.hide()
+			$Danger3.hide()
 		1:
 			play("Damage1")
+			$Danger1.hide()
+			$Danger2.hide()
+			$Danger3.hide()
 		2:
 			play("Damage2")
+			$Danger1.hide()
+			$Danger2.hide()
+			$Danger3.hide()
 		3:
 			play("Damage3")
+			$Danger1.hide()
+			$Danger2.hide()
+			$Danger3.hide()
 		4:
 			play("Damage4")
+			$Danger1.hide()
+			$Danger2.hide()
+			$Danger3.hide()
+		5:
+			play("Damage5")
+			$Danger1.show()
+			$Danger2.show()
+			$Danger3.show()
 
 
 func game_end():
 	$Spill.show()
 	$Spill.play()
-	play("Damage5")
-	
+	play("Damage6")
+
+
+func sink():
+	play("Sink")
+	$Spill.hide()
+	$Danger1.hide()
+	$Danger2.hide()
+	$Danger3.hide()
+	damage = 0
+	$DamageTimer.stop()
 
 
 func damage():
-	if damage <4:
+	eligible = false
+	if damage <5:
 		damage += 1
+	else:
+		emit_signal("Bust")
+	$DamageTimer.wait_time = rand_range(10.0,12.0)
 	$DamageTimer.start()
 
 
 func repair():
 	damage = 0
 	$DamageTimer.stop()
+	$DoNotDamageTimer.start()
 
 
 func get_damage():
@@ -66,3 +103,7 @@ func _on_RepairArea_body_exited(body):
 
 func _on_DamageTimer_timeout():
 	damage()
+
+
+func _on_DoNotDamageTimer_timeout():
+	eligible = true # Replace with function body.

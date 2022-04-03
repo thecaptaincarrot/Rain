@@ -1,0 +1,116 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Fonts/Word.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Fonts/Action.png" type="Texture" id=2]
+
+[node name="Credits" type="Node2D"]
+
+[node name="THIS CEASELESS RAIN" parent="." instance=ExtResource( 1 )]
+scale = Vector2( 4, 4 )
+text = "CEASELESS RAIN"
+
+[node name="By Captain Carrot" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 25 )
+scale = Vector2( 3, 3 )
+text = "By: captain carrot"
+
+[node name="Salty squad game" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 43 )
+scale = Vector2( 2, 2 )
+text = "A Salty Squad Game"
+
+[node name="LUDUM DAre" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 93 )
+scale = Vector2( 2, 2 )
+text = "MAde for ludum dare 50"
+
+[node name="Special Thanks" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 151 )
+scale = Vector2( 2, 2 )
+text = "Special Thanks to:"
+
+[node name="Cag" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 167 )
+scale = Vector2( 2, 2 )
+text = "Cag"
+
+[node name="Nwah" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 183 )
+scale = Vector2( 2, 2 )
+text = "Nwah"
+
+[node name="Gogorisika" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 200 )
+scale = Vector2( 2, 2 )
+text = "Gogorisika"
+
+[node name="Xghoel" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 216 )
+scale = Vector2( 2, 2 )
+text = "Xghoel"
+
+[node name="SonicPixelation" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 232 )
+scale = Vector2( 2, 2 )
+text = "SonicPixelation"
+
+[node name="Soup" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 246 )
+scale = Vector2( 2, 2 )
+text = "Soup"
+
+[node name="Kiwi" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 261 )
+scale = Vector2( 2, 2 )
+text = "Kiwi"
+
+[node name="Vidofniir" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 278 )
+scale = Vector2( 2, 2 )
+text = "Vidofniir"
+
+[node name="6ar6oyle" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 295 )
+scale = Vector2( 2, 2 )
+text = "6ar60yle"
+
+[node name="Ha1fdead" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 310 )
+scale = Vector2( 2, 2 )
+text = "Ha1fdead"
+
+[node name="Friscoe Hotsauce" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 326 )
+scale = Vector2( 2, 2 )
+text = "Friscoe Hotsauce"
+
+[node name="Thanks for Hanging out" parent="." instance=ExtResource( 1 )]
+position = Vector2( 1, 360 )
+scale = Vector2( 2, 2 )
+text = "Thanks for hanging out"
+
+[node name="Thanks for Hanging out2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 0, 374 )
+scale = Vector2( 2, 2 )
+text = "On Stream with me"
+
+[node name="And you!" parent="." instance=ExtResource( 1 )]
+position = Vector2( 12, 418 )
+scale = Vector2( 2, 2 )
+text = "And thank      for playing"
+
+[node name="And you!2" parent="." instance=ExtResource( 1 )]
+modulate = Color( 1, 0, 0, 1 )
+position = Vector2( 2, 420 )
+scale = Vector2( 3, 4 )
+text = "YOU"
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 153, 417 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 2 )
+
+[node name="Sprite2" type="Sprite" parent="."]
+position = Vector2( 101, 373 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 2 )

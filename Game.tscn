@@ -1,8 +1,8 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=46 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Game.gd" type="Script" id=2]
-[ext_resource path="res://Sprites/PersonWalking.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Whiteout.gd" type="Script" id=3]
 [ext_resource path="res://Sprites/Cliff.png" type="Texture" id=4]
 [ext_resource path="res://DamNodes/DamNode.tscn" type="PackedScene" id=5]
 [ext_resource path="res://PlankMaker.tscn" type="PackedScene" id=6]
@@ -13,63 +13,134 @@
 [ext_resource path="res://Sprites/WaterDroplet.png" type="Texture" id=11]
 [ext_resource path="res://HUD/Numeral.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Fonts/Numerals.png" type="Texture" id=13]
+[ext_resource path="res://Scripts/River.gd" type="Script" id=14]
+[ext_resource path="res://Sprites/RainDrops.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Masks/CliifMask.png" type="Texture" id=16]
+[ext_resource path="res://Evacuees.gd" type="Script" id=17]
+[ext_resource path="res://Sprites/GroundTile.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/MuddyGround.png" type="Texture" id=20]
+[ext_resource path="res://Scripts/Score.gd" type="Script" id=21]
+[ext_resource path="res://Sprites/PlayerCharacter.png" type="Texture" id=22]
+[ext_resource path="res://Fonts/ESCAPED.png" type="Texture" id=23]
+[ext_resource path="res://Fonts/Credits.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Fonts/Word.tscn" type="PackedScene" id=25]
+
+[sub_resource type="CapsuleShape2D" id=47]
+radius = 25.0
+
+[sub_resource type="TileSet" id=48]
+0/name = "GroundTile.png 0"
+0/texture = ExtResource( 19 )
+0/tex_offset = Vector2( 0, 0 )
+0/modulate = Color( 1, 1, 1, 1 )
+0/region = Rect2( 0, 0, 128, 128 )
+0/tile_mode = 1
+0/autotile/bitmask_mode = 0
+0/autotile/bitmask_flags = [ Vector2( 0, 0 ), 325, Vector2( 0, 1 ), 325, Vector2( 0, 2 ), 325, Vector2( 0, 3 ), 325, Vector2( 1, 0 ), 325, Vector2( 1, 1 ), 325, Vector2( 1, 2 ), 325, Vector2( 1, 3 ), 325, Vector2( 2, 0 ), 325, Vector2( 2, 1 ), 325, Vector2( 2, 2 ), 325, Vector2( 2, 3 ), 325, Vector2( 3, 0 ), 325, Vector2( 3, 1 ), 325, Vector2( 3, 2 ), 325, Vector2( 3, 3 ), 325 ]
+0/autotile/icon_coordinate = Vector2( 0, 0 )
+0/autotile/tile_size = Vector2( 32, 32 )
+0/autotile/spacing = 0
+0/autotile/occluder_map = [  ]
+0/autotile/navpoly_map = [  ]
+0/autotile/priority_map = [  ]
+0/autotile/z_index_map = [  ]
+0/occluder_offset = Vector2( 0, 0 )
+0/navigation_offset = Vector2( 0, 0 )
+0/shape_offset = Vector2( 0, 0 )
+0/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+0/shape_one_way = false
+0/shape_one_way_margin = 0.0
+0/shapes = [  ]
+0/z_index = 0
 
 [sub_resource type="AtlasTexture" id=1]
-atlas = ExtResource( 3 )
-region = Rect2( 0, 0, 16, 20 )
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 0, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=2]
-atlas = ExtResource( 3 )
-region = Rect2( 16, 0, 16, 20 )
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 32, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=3]
-atlas = ExtResource( 3 )
-region = Rect2( 32, 0, 16, 20 )
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 64, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=4]
-atlas = ExtResource( 3 )
-region = Rect2( 48, 0, 16, 20 )
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 96, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=5]
-atlas = ExtResource( 3 )
-region = Rect2( 64, 0, 16, 20 )
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 128, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 3 )
-region = Rect2( 80, 0, 16, 20 )
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 160, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 3 )
-region = Rect2( 96, 0, 16, 20 )
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 192, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 3 )
-region = Rect2( 112, 0, 16, 20 )
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 224, 0, 32, 32 )
 
-[sub_resource type="SpriteFrames" id=9]
+[sub_resource type="AtlasTexture" id=9]
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 256, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 288, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 320, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 2
+atlas = ExtResource( 15 )
+region = Rect2( 352, 0, 32, 32 )
+
+[sub_resource type="SpriteFrames" id=13]
 animations = [ {
-"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
+"frames": [ SubResource( 1 ), SubResource( 2 ), SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ) ],
 "loop": true,
-"name": "Walk",
-"speed": 8.0
+"name": "default",
+"speed": 12.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=12]
+[sub_resource type="RectangleShape2D" id=15]
 extents = Vector2( 10, 110.5 )
 
-[sub_resource type="RectangleShape2D" id=13]
+[sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 218.5, 10 )
 
 [sub_resource type="RectangleShape2D" id=14]
 extents = Vector2( 10, 117 )
 
-[sub_resource type="AtlasTexture" id=10]
+[sub_resource type="AtlasTexture" id=17]
 atlas = ExtResource( 13 )
 region = Rect2( 50, 0, 5, 5 )
 
-[sub_resource type="AtlasTexture" id=11]
+[sub_resource type="AtlasTexture" id=18]
 atlas = ExtResource( 13 )
 region = Rect2( 55, 0, 5, 5 )
+
+[sub_resource type="AtlasTexture" id=49]
+atlas = ExtResource( 22 )
+region = Rect2( 0, 0, 16, 16 )
 
 [node name="Game" type="Node2D"]
 script = ExtResource( 2 )
@@ -86,18 +157,49 @@ position = Vector2( 192, 44 )
 [node name="PlankMaker" parent="Planks" instance=ExtResource( 6 )]
 position = Vector2( 272, 192 )
 
+[node name="PlankMaker2" parent="Planks" instance=ExtResource( 6 )]
+position = Vector2( 105, 192 )
+scale = Vector2( -1, 1 )
+drag_left = false
+
+[node name="SawSprite" parent="Planks/PlankMaker2/SawBody" index="0"]
+frame = 2
+
+[node name="Number" parent="Planks/PlankMaker2/PlankPile" index="4"]
+scale = Vector2( -1, 1 )
+
 [node name="DroppedPlanks" type="Node2D" parent="."]
 
-[node name="Evacuees" type="Node2D" parent="."]
+[node name="Evacuees" type="Node" parent="."]
+script = ExtResource( 17 )
 
-[node name="Evacuee" type="AnimatedSprite" parent="Evacuees"]
-position = Vector2( 10, 237 )
-frames = SubResource( 9 )
-animation = "Walk"
-frame = 6
-playing = true
+[node name="EvacueeSpawnPoint" type="Position2D" parent="Evacuees"]
+position = Vector2( -32, 224 )
 
-[node name="Scenery" type="Node2D" parent="."]
+[node name="People" type="Node" parent="Evacuees"]
+
+[node name="Exit" type="Area2D" parent="Evacuees" groups=["Exit"]]
+position = Vector2( 14, 2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Evacuees/Exit"]
+position = Vector2( 389, 242 )
+shape = SubResource( 47 )
+
+[node name="KillZone" type="Area2D" parent="Evacuees"]
+position = Vector2( 68, 3 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Evacuees/KillZone" groups=["KillZone"]]
+position = Vector2( 389, 242 )
+shape = SubResource( 47 )
+
+[node name="EvacueeTimer" type="Timer" parent="Evacuees"]
+wait_time = 2.0
+autostart = true
+
+[node name="Footprints" type="Node2D" parent="."]
+z_index = -10
+
+[node name="Scenery" type="Node" parent="."]
 
 [node name="CliffLeft" type="Sprite" parent="Scenery"]
 position = Vector2( 23, 48 )
@@ -114,7 +216,8 @@ polygon = PoolVector2Array( -41, 34, -10, 22, 9, 23, 26, 19, 42, 12, 42, -1, 33,
 
 [node name="CliffRight" type="Sprite" parent="Scenery"]
 position = Vector2( 361, 48 )
-scale = Vector2( -1, 1 )
+rotation = -3.14159
+scale = Vector2( 1, -1 )
 z_index = -2
 texture = ExtResource( 4 )
 __meta__ = {
@@ -135,9 +238,6 @@ __meta__ = {
 }
 
 [node name="Sprite" type="Sprite" parent="Scenery"]
-__meta__ = {
-"_edit_lock_": true
-}
 
 [node name="Ground" type="Sprite" parent="Scenery"]
 position = Vector2( -8, -8 )
@@ -148,19 +248,3755 @@ __meta__ = {
 "_edit_lock_": true
 }
 
+[node name="MuddyGround" type="Sprite" parent="Scenery"]
+modulate = Color( 1, 1, 1, 0 )
+position = Vector2( -8, -8 )
+z_index = -100
+texture = ExtResource( 20 )
+centered = false
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="TileMap" type="TileMap" parent="Scenery"]
+visible = false
+z_index = -100
+tile_set = SubResource( 48 )
+cell_size = Vector2( 32, 32 )
+format = 1
+tile_data = PoolIntArray( -1, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65532, 0, 0, -65531, 0, 0, -65530, 0, 0, -65529, 0, 0, -65528, 0, 0, -65527, 0, 0, -65526, 0, 0, -65525, 0, 0, -65524, 0, 0, -65523, 0, 0, 65534, 0, 0, 65535, 0, 0, 0, 0, 65538, 1, 0, 1, 2, 0, 65539, 3, 0, 65538, 4, 0, 65539, 5, 0, 65537, 6, 0, 65537, 7, 0, 131075, 8, 0, 196610, 9, 0, 1, 10, 0, 196609, 11, 0, 196609, 12, 0, 131074, 13, 0, 0, 14, 0, 0, 131070, 0, 0, 131071, 0, 65538, 65536, 0, 65539, 65537, 0, 131074, 65538, 0, 196610, 65539, 0, 1, 65540, 0, 196610, 65541, 0, 131075, 65542, 0, 2, 65543, 0, 65538, 65544, 0, 131072, 65545, 0, 2, 65546, 0, 1, 65547, 0, 65536, 65548, 0, 196609, 65549, 0, 0, 65550, 0, 0, 196606, 0, 0, 196607, 0, 65537, 131072, 0, 2, 131073, 0, 65537, 131074, 0, 65539, 131075, 0, 65536, 131076, 0, 196611, 131077, 0, 65536, 131078, 0, 65538, 131079, 0, 65536, 131080, 0, 196610, 131081, 0, 65538, 131082, 0, 65539, 131083, 0, 65538, 131084, 0, 65538, 131085, 0, 196610, 131086, 0, 0, 262141, 0, 0, 262142, 0, 0, 262143, 0, 131073, 196608, 0, 131075, 196609, 0, 65536, 196610, 0, 131073, 196611, 0, 196611, 196612, 0, 0, 196613, 0, 65537, 196614, 0, 2, 196615, 0, 131073, 196616, 0, 65538, 196617, 0, 196608, 196618, 0, 131073, 196619, 0, 65536, 196620, 0, 196609, 196621, 0, 131074, 196622, 0, 0, 327677, 0, 0, 327678, 0, 3, 327679, 0, 196611, 262144, 0, 131074, 262145, 0, 131074, 262146, 0, 65536, 262147, 0, 196610, 262148, 0, 65537, 262149, 0, 131074, 262150, 0, 196611, 262151, 0, 131073, 262152, 0, 131072, 262153, 0, 131074, 262154, 0, 65537, 262155, 0, 131075, 262156, 0, 131073, 262157, 0, 1, 262158, 0, 0, 393213, 0, 0, 393214, 0, 2, 393215, 0, 65539, 327680, 0, 131075, 327681, 0, 196611, 327682, 0, 196609, 327683, 0, 0, 327684, 0, 2, 327685, 0, 65536, 327686, 0, 65539, 327687, 0, 131075, 327688, 0, 196609, 327689, 0, 65538, 327690, 0, 131074, 327691, 0, 131074, 327692, 0, 196611, 327693, 0, 131073, 327694, 0, 0, 458749, 0, 0, 458750, 0, 65538, 458751, 0, 3, 393216, 0, 196609, 393217, 0, 0, 393218, 0, 3, 393219, 0, 196609, 393220, 0, 3, 393221, 0, 131073, 393222, 0, 65537, 393223, 0, 0, 393224, 0, 2, 393225, 0, 196608, 393226, 0, 131075, 393227, 0, 0, 393228, 0, 131073, 393229, 0, 131073, 393230, 0, 0, 524285, 0, 0, 524286, 0, 131074, 524287, 0, 131074, 458752, 0, 3, 458753, 0, 196608, 458754, 0, 131074, 458755, 0, 1, 458756, 0, 131074, 458757, 0, 65536, 458758, 0, 2, 458759, 0, 196609, 458760, 0, 3, 458761, 0, 65536, 458762, 0, 196608, 458763, 0, 196611, 458764, 0, 131072, 458765, 0, 3, 458766, 0, 0, 589820, 0, 0, 589821, 0, 0, 589822, 0, 0, 589823, 0, 1, 524288, 0, 65536, 524289, 0, 131072, 524290, 0, 196611, 524291, 0, 196608, 524292, 0, 131075, 524293, 0, 196609, 524294, 0, 196608, 524295, 0, 0, 524296, 0, 196608, 524297, 0, 131075, 524298, 0, 131075, 524299, 0, 65539, 524300, 0, 3, 524301, 0, 65536, 524302, 0, 0, 655356, 0, 0, 655357, 0, 196609, 655358, 0, 196611, 655359, 0, 65536, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 3, 589828, 0, 65538, 589829, 0, 2, 589830, 0, 131073, 589831, 0, 131073, 589832, 0, 131075, 589833, 0, 131072, 589834, 0, 1, 589835, 0, 3, 589836, 0, 65536, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 0, 0, 720891, 0, 0, 720892, 0, 0, 720893, 0, 0, 720894, 0, 196610, 720895, 0, 65539, 655360, 0, 131075, 655361, 0, 131073, 655362, 0, 131075, 655363, 0, 196610, 655364, 0, 196608, 655365, 0, 196610, 655366, 0, 131072, 655367, 0, 196608, 655368, 0, 131074, 655369, 0, 131072, 655370, 0, 131075, 655371, 0, 131073, 655372, 0, 65538, 655373, 0, 65538, 655374, 0, 65536, 655375, 0, 196608, 655376, 0, 0, 786429, 0, 0, 786430, 0, 0, 786431, 0, 0, 720896, 0, 0, 720897, 0, 0, 720898, 0, 0, 720899, 0, 0, 720900, 0, 0, 720901, 0, 0, 720902, 0, 0, 720903, 0, 0, 720904, 0, 0, 720905, 0, 0, 720906, 0, 0, 720907, 0, 0, 720908, 0, 0, 720909, 0, 0, 720910, 0, 0, 720911, 0, 0, 720912, 0, 0 )
+
 [node name="River" parent="Scenery" instance=ExtResource( 9 )]
 position = Vector2( 194, 34 )
 z_index = -98
+
+[node name="DeepRiver" type="Node2D" parent="Scenery"]
+visible = false
+position = Vector2( 162, 38 )
+z_index = -98
+script = ExtResource( 14 )
+
+[node name="Node2D" type="Node2D" parent="Scenery/DeepRiver"]
+
+[node name="AnimatedSprite190" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 10
+playing = true
+
+[node name="AnimatedSprite191" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 9
+playing = true
+
+[node name="AnimatedSprite192" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite193" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite194" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite195" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite196" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite197" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite198" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite199" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite200" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite201" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite202" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite203" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite204" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite205" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite206" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite207" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 9
+playing = true
+
+[node name="AnimatedSprite208" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite209" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite210" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite211" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite212" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite213" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite214" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite215" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite216" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite217" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite218" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite219" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite220" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite221" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite222" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite223" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite224" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite225" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite226" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite227" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite228" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite229" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite230" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite231" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite232" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite233" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite234" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite235" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite236" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite237" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite238" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite239" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite240" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite241" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite242" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite243" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite244" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite245" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite246" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite247" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite248" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite249" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite250" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite251" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite252" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite253" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite254" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite255" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite256" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite257" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite258" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite259" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite260" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite261" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite262" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite263" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite264" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite265" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite266" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite267" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite268" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite269" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite270" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite271" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite272" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite273" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite274" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite275" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 8
+playing = true
+
+[node name="AnimatedSprite276" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite277" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite278" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite279" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite280" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite281" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite282" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite283" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite284" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite285" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite286" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite287" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite288" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite289" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite290" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite291" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite292" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite293" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite294" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite295" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite296" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite297" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite298" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite299" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite300" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite301" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite302" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite303" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite304" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite305" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite306" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite307" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite308" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite309" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite310" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite311" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite312" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite313" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite314" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite315" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite316" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite317" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite318" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite319" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite320" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite321" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite322" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite323" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite324" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite325" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite326" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 7
+playing = true
+
+[node name="AnimatedSprite327" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite328" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite329" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite330" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite331" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite332" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite333" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite334" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite335" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite336" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite337" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite338" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite339" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite340" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite341" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite342" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite343" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite344" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite345" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite346" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite347" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite348" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite349" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite350" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite351" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite352" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite353" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite354" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite355" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite356" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite357" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite358" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite359" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite360" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 6
+playing = true
+
+[node name="AnimatedSprite361" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite362" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite363" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite364" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite365" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite366" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite367" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite368" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite369" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite370" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite371" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite372" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite373" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite374" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite375" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite376" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite377" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite378" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite379" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite380" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite381" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite382" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite383" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite384" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite385" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite394" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite395" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite396" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite397" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite398" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite399" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite400" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite401" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite402" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite403" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite404" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite405" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite406" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite407" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite408" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite409" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite410" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite411" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite412" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite413" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite414" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite415" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite416" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite417" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite418" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite419" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite420" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite421" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite422" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite423" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite424" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite425" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite426" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite427" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite428" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite429" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite430" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite431" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite432" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite433" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite434" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite435" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite436" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite437" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite438" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite439" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite440" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite441" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite442" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite443" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite444" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite445" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite446" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite447" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite448" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite449" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite450" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite451" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite452" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite453" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite454" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite455" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite456" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite457" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite458" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite459" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite460" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite461" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite462" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite463" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite464" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite465" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite386" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite387" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite388" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite389" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite390" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite391" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite392" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite393" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite466" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite467" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite468" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite469" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite470" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite471" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite472" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite473" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite474" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite475" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite476" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite477" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite478" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite479" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite480" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite481" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite482" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite483" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite484" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite485" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite486" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite487" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite488" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite489" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite490" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite491" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite492" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite493" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite494" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite495" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite496" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite497" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite498" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite499" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite500" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite501" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite502" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite503" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite504" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite505" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite506" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite507" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite508" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite509" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite510" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite511" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite512" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite513" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite514" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite515" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite516" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite517" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite518" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite519" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite520" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite521" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite522" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite523" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite524" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite525" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite526" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite527" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite528" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite529" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite530" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite531" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite532" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite533" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite534" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite535" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite536" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite537" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite538" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite539" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite540" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite541" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite542" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite543" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite544" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite545" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite546" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite547" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite548" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite549" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite550" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite551" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite552" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite553" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite554" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite555" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite556" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite557" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite558" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite559" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite560" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite561" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite562" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite563" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite564" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite565" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite566" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite567" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite568" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite569" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite570" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite571" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite572" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite573" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite574" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite575" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 0, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite576" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 16, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite577" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 32, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite578" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 48, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite579" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 64, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite580" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 80, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite581" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 96, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite582" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 112, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite583" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 128, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite584" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite585" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 144, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite586" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite587" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 160, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite588" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 11
+playing = true
+
+[node name="AnimatedSprite589" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 176, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 11
+playing = true
+
+[node name="AnimatedSprite604" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite605" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite606" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite607" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite608" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite609" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite610" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite611" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite612" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite613" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite614" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite615" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite616" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 5
+playing = true
+
+[node name="AnimatedSprite617" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite618" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite619" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite620" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite621" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite622" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite623" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite624" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite625" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite626" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite627" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite628" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 0 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 4
+playing = true
+
+[node name="AnimatedSprite629" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 16 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite630" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 32 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite631" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 48 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite632" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 64 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite633" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 80 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite634" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 96 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite635" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 112 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite636" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 128 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite637" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 144 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite638" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 160 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite639" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 176 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite640" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite641" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite642" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite643" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite644" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 192 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite645" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 208 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite646" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite647" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite648" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite649" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite650" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 224 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 11
+playing = true
+
+[node name="AnimatedSprite651" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 240 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 11
+playing = true
+
+[node name="AnimatedSprite652" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite653" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 192, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite654" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite655" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 208, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite656" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 11
+playing = true
+
+[node name="AnimatedSprite657" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( 224, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 11
+playing = true
+
+[node name="AnimatedSprite590" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite591" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -176, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="AnimatedSprite592" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 11
+playing = true
+
+[node name="AnimatedSprite593" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -160, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 11
+playing = true
+
+[node name="AnimatedSprite594" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 256 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 11
+playing = true
+
+[node name="AnimatedSprite595" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -144, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 11
+playing = true
+
+[node name="AnimatedSprite596" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -128, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 3
+playing = true
+
+[node name="AnimatedSprite597" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -112, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite598" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -96, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite599" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -80, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 2
+playing = true
+
+[node name="AnimatedSprite600" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -64, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite601" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -48, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite602" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -32, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+frame = 1
+playing = true
+
+[node name="AnimatedSprite603" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
+light_mask = 512
+position = Vector2( -16, 272 )
+scale = Vector2( 0.5, 0.5 )
+frames = SubResource( 13 )
+playing = true
+
+[node name="CliffMaskLeft" type="Light2D" parent="Scenery/DeepRiver"]
+position = Vector2( -139, 12 )
+texture = ExtResource( 16 )
+mode = 3
+
+[node name="CliffMaskRight" type="Light2D" parent="Scenery/DeepRiver"]
+position = Vector2( 199, 11 )
+scale = Vector2( -1, 1 )
+texture = ExtResource( 16 )
+mode = 3
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( -10, 181.5 )
-shape = SubResource( 12 )
+shape = SubResource( 15 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 188, 267 )
-shape = SubResource( 13 )
+shape = SubResource( 16 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 394, 163 )
@@ -187,14 +4023,82 @@ position = Vector2( 13, 3 )
 
 [node name="Point" type="Sprite" parent="HUD/Percentage"]
 position = Vector2( 17, 3 )
-texture = SubResource( 10 )
+texture = SubResource( 17 )
 
 [node name="Decimal" parent="HUD/Percentage" instance=ExtResource( 12 )]
 position = Vector2( 20, 3 )
 
 [node name="Percentile" type="Sprite" parent="HUD/Percentage"]
 position = Vector2( 26, 3 )
-texture = SubResource( 11 )
+texture = SubResource( 18 )
+
+[node name="Score" type="Node2D" parent="HUD"]
+position = Vector2( 18, 6 )
+script = ExtResource( 21 )
+
+[node name="Hundred" parent="HUD/Score" instance=ExtResource( 12 )]
+position = Vector2( 4.5, 5.5 )
+
+[node name="Ten" parent="HUD/Score" instance=ExtResource( 12 )]
+position = Vector2( 9.5, 5.5 )
+
+[node name="One" parent="HUD/Score" instance=ExtResource( 12 )]
+position = Vector2( 14.5, 5.5 )
+
+[node name="Sprite" type="Sprite" parent="HUD/Score"]
+position = Vector2( -6, 2 )
+texture = SubResource( 49 )
+
+[node name="Sprite2" type="Sprite" parent="HUD/Score"]
+position = Vector2( 13, -1 )
+texture = ExtResource( 23 )
+
+[node name="Whiteout" type="ColorRect" parent="HUD"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 1, 1, 1, 0 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="FadeIn" type="Tween" parent="HUD/Whiteout"]
+
+[node name="FadeOut" type="Tween" parent="HUD/Whiteout"]
+
+[node name="Credits" parent="HUD" instance=ExtResource( 24 )]
+position = Vector2( 193, 300 )
+
+[node name="CreditsRoll" type="Tween" parent="HUD/Credits"]
+
+[node name="Word" parent="HUD/Credits" instance=ExtResource( 25 )]
+position = Vector2( -26, 447 )
+scale = Vector2( 3, 3 )
+text = "Final score:"
+
+[node name="FinalScore" parent="HUD/Credits" instance=ExtResource( 25 )]
+position = Vector2( 95, 447 )
+scale = Vector2( 3, 3 )
+text = "999"
+
+[node name="PressSpaceToRestart" parent="HUD/Credits" instance=ExtResource( 25 )]
+position = Vector2( 9.99998, 596 )
+scale = Vector2( 3, 3 )
+text = "Press Action To Restart"
+
+[node name="ResetTimer" type="Timer" parent="."]
+wait_time = 20.0
+one_shot = true
 
 [connection signal="game_over" from="." to="DamNode" method="_on_Game_game_over"]
+[connection signal="game_over" from="." to="HUD/Whiteout" method="_on_Game_game_over"]
 [connection signal="DropPlank" from="Player" to="." method="_on_Player_DropPlank"]
+[connection signal="Footprint" from="Player" to="." method="_on_Player_Footprint"]
+[connection signal="area_entered" from="Evacuees/Exit" to="." method="_on_Exit_area_entered"]
+[connection signal="area_entered" from="Evacuees/KillZone" to="Evacuees" method="_on_KillZone_area_entered"]
+[connection signal="timeout" from="Evacuees/EvacueeTimer" to="Evacuees" method="_on_EvacueeTimer_timeout"]
+[connection signal="tween_all_completed" from="HUD/Whiteout/FadeIn" to="." method="_on_FadeIn_tween_all_completed"]
+[connection signal="timeout" from="ResetTimer" to="." method="_on_ResetTimer_timeout"]
+
+[editable path="Planks/PlankMaker2"]

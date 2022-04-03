@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Dam_tall.png-87c195d39084e2e7e1d7a26488382abe.stex"
+path="res://.import/CliifMask.png-1c8dece3400bd8ec3ef279a3754df86e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Dam_tall.png"
-dest_files=[ "res://.import/Dam_tall.png-87c195d39084e2e7e1d7a26488382abe.stex" ]
+source_file="res://Sprites/Masks/CliifMask.png"
+dest_files=[ "res://.import/CliifMask.png-1c8dece3400bd8ec3ef279a3754df86e.stex" ]
 
 [params]
 
