@@ -17,26 +17,34 @@ __meta__ = {
 
 [node name="DamPiece" parent="DamSections" instance=ExtResource( 2 )]
 position = Vector2( -112, 8 )
+frame = 2
 
 [node name="DamPiece2" parent="DamSections" instance=ExtResource( 2 )]
 position = Vector2( -80, 8 )
+frame = 2
 
 [node name="DamPiece3" parent="DamSections" instance=ExtResource( 2 )]
 position = Vector2( -48, 8 )
+frame = 2
 
 [node name="DamPiece4" parent="DamSections" instance=ExtResource( 2 )]
 position = Vector2( -16, 8 )
+frame = 2
 
 [node name="DamPiece5" parent="DamSections" instance=ExtResource( 2 )]
+frame = 2
 
 [node name="DamPiece6" parent="DamSections" instance=ExtResource( 2 )]
 position = Vector2( 48, 8 )
+frame = 2
 
 [node name="DamPiece7" parent="DamSections" instance=ExtResource( 2 )]
 position = Vector2( 80, 8 )
+frame = 2
 
 [node name="DamPiece8" parent="DamSections" instance=ExtResource( 2 )]
 position = Vector2( 112, 8 )
+frame = 2
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 position = Vector2( -128, 0 )

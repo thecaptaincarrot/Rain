@@ -195,3 +195,22 @@ func animation_handler():
 
 func _on_HammerTimer_timeout():
 	state = ACTIVE
+
+
+func _on_PlayerSprite_frame_changed(): #Sound Effects
+	if $PlayerSprite.animation == "Hammer":
+		if $PlayerSprite.frame == 1 :
+			$Hammer.play()
+	
+	if $PlayerSprite.animation == "Run" or $PlayerSprite.animation == "PlankRun":
+		if $PlayerSprite.frame == 0  or $PlayerSprite.frame == 4:
+			$FootSteps.play()
+	
+	if $PlayerSprite.animation == "LogPull":
+		if !$LogDrag.is_playing():
+			print("This should only happen like once")
+			$LogDrag.play()
+		if $PlayerSprite.frame == 0  or $PlayerSprite.frame == 3:
+			$FootSteps.play()
+	else:
+		$LogDrag.stop()

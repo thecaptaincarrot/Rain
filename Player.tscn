@@ -1,9 +1,12 @@
-[gd_scene load_steps=37 format=2]
+[gd_scene load_steps=40 format=2]
 
 [ext_resource path="res://Sprites/PlayerCharacter.png" type="Texture" id=1]
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=2]
 [ext_resource path="res://PlankMaker/LogTexture.tres" type="Texture" id=3]
 [ext_resource path="res://Fonts/Action.png" type="Texture" id=4]
+[ext_resource path="res://SoundEffects/Hammer.wav" type="AudioStream" id=5]
+[ext_resource path="res://SoundEffects/Footstep.wav" type="AudioStream" id=6]
+[ext_resource path="res://SoundEffects/LogDrag.wav" type="AudioStream" id=7]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )
@@ -73,10 +76,6 @@ region = Rect2( 96, 32, 16, 16 )
 atlas = ExtResource( 1 )
 region = Rect2( 112, 32, 16, 16 )
 
-[sub_resource type="AtlasTexture" id=12]
-atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 16, 16 )
-
 [sub_resource type="AtlasTexture" id=21]
 atlas = ExtResource( 1 )
 region = Rect2( 32, 0, 16, 16 )
@@ -121,6 +120,10 @@ region = Rect2( 64, 64, 16, 16 )
 atlas = ExtResource( 1 )
 region = Rect2( 80, 64, 16, 16 )
 
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 16, 16 )
+
 [sub_resource type="AtlasTexture" id=61]
 atlas = ExtResource( 1 )
 region = Rect2( 48, 0, 16, 16 )
@@ -137,11 +140,6 @@ animations = [ {
 "name": "PlankRun",
 "speed": 12.0
 }, {
-"frames": [ SubResource( 12 ) ],
-"loop": true,
-"name": "Stand",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 21 ) ],
 "loop": true,
 "name": "PlankStand",
@@ -156,6 +154,11 @@ animations = [ {
 "loop": true,
 "name": "LogPull",
 "speed": 10.0
+}, {
+"frames": [ SubResource( 12 ) ],
+"loop": true,
+"name": "Stand",
+"speed": 5.0
 }, {
 "frames": [ SubResource( 61 ) ],
 "loop": true,
@@ -184,7 +187,8 @@ offset = Vector2( 0, -6 )
 light_mask = 2
 position = Vector2( 1, 0 )
 frames = SubResource( 10 )
-animation = "Stand"
+animation = "Hammer"
+frame = 1
 playing = true
 offset = Vector2( -1, -8 )
 flip_h = true
@@ -213,4 +217,16 @@ z_index = -2
 texture = ExtResource( 3 )
 offset = Vector2( -10, 0 )
 
+[node name="FootSteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+volume_db = 5.0
+
+[node name="Hammer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )
+
+[node name="LogDrag" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+volume_db = -10.0
+
+[connection signal="frame_changed" from="PlayerSprite" to="." method="_on_PlayerSprite_frame_changed"]
 [connection signal="timeout" from="HammerTimer" to="." method="_on_HammerTimer_timeout"]

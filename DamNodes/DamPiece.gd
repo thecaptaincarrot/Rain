@@ -2,6 +2,8 @@ extends AnimatedSprite
 
 export var damage = 0
 
+var game_over = false
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -9,7 +11,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	damage_handler()
+	if !game_over:
+		damage_handler()
 
 
 func damage_handler(): #animation and any other checks
@@ -28,8 +31,16 @@ func damage_handler(): #animation and any other checks
 			play("Damage4")
 
 
+func game_end():
+	$Spill.show()
+	$Spill.play()
+	play("Damage5")
+	
+
+
 func damage():
-	damage += 1
+	if damage <4:
+		damage += 1
 	$DamageTimer.start()
 
 
