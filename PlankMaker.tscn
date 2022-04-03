@@ -1,0 +1,307 @@
+[gd_scene load_steps=39 format=2]
+
+[ext_resource path="res://Sprites/LogPile.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Saw.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/PlankMaker.gd" type="Script" id=3]
+[ext_resource path="res://PlankMaker/LogTexture.tres" type="Texture" id=4]
+[ext_resource path="res://PlankMaker/PlankMask.png" type="Texture" id=5]
+[ext_resource path="res://PlankMaker/PlankTexture.tres" type="Texture" id=6]
+[ext_resource path="res://Scripts/Number.gd" type="Script" id=7]
+[ext_resource path="res://Fonts/Numerals.png" type="Texture" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 10, 6 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 1.75, 4 )
+
+[sub_resource type="AtlasTexture" id=4]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 16, 24, 16 )
+
+[sub_resource type="AtlasTexture" id=5]
+atlas = ExtResource( 2 )
+region = Rect2( 24, 16, 24, 16 )
+
+[sub_resource type="AtlasTexture" id=6]
+atlas = ExtResource( 2 )
+region = Rect2( 48, 16, 24, 16 )
+
+[sub_resource type="AtlasTexture" id=7]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 0, 24, 16 )
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ) ],
+"loop": true,
+"name": "Spin",
+"speed": 10.0
+}, {
+"frames": [ SubResource( 7 ) ],
+"loop": true,
+"name": "Default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 12, 9.5 )
+
+[sub_resource type="RectangleShape2D" id=21]
+extents = Vector2( 2.5, 5 )
+
+[sub_resource type="Animation" id=23]
+resource_name = "LogCut"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("CuttingLog:visible")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 1,
+"values": [ true, false ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("CuttingLog:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 22, 2 ), Vector2( -24, 2 ) ]
+}
+
+[sub_resource type="AtlasTexture" id=9]
+atlas = ExtResource( 2 )
+region = Rect2( 0, 48, 24, 16 )
+
+[sub_resource type="AtlasTexture" id=10]
+atlas = ExtResource( 2 )
+region = Rect2( 24, 48, 24, 16 )
+
+[sub_resource type="AtlasTexture" id=11]
+atlas = ExtResource( 2 )
+region = Rect2( 48, 48, 24, 16 )
+
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 2 )
+region = Rect2( 72, 48, 24, 16 )
+
+[sub_resource type="AtlasTexture" id=13]
+atlas = ExtResource( 2 )
+region = Rect2( 96, 48, 24, 16 )
+
+[sub_resource type="AtlasTexture" id=14]
+atlas = ExtResource( 2 )
+region = Rect2( 120, 48, 24, 16 )
+
+[sub_resource type="SpriteFrames" id=15]
+animations = [ {
+"frames": [ SubResource( 9 ), SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=24]
+extents = Vector2( 12, 3 )
+
+[sub_resource type="RectangleShape2D" id=25]
+extents = Vector2( 16.5, 9 )
+
+[sub_resource type="AtlasTexture" id=26]
+atlas = ExtResource( 8 )
+region = Rect2( 0, 0, 5, 5 )
+
+[sub_resource type="AtlasTexture" id=27]
+atlas = ExtResource( 8 )
+region = Rect2( 5, 0, 5, 5 )
+
+[sub_resource type="AtlasTexture" id=28]
+atlas = ExtResource( 8 )
+region = Rect2( 10, 0, 5, 5 )
+
+[sub_resource type="AtlasTexture" id=29]
+atlas = ExtResource( 8 )
+region = Rect2( 15, 0, 5, 5 )
+
+[sub_resource type="AtlasTexture" id=30]
+atlas = ExtResource( 8 )
+region = Rect2( 20, 0, 5, 5 )
+
+[sub_resource type="AtlasTexture" id=31]
+atlas = ExtResource( 8 )
+region = Rect2( 25, 0, 5, 5 )
+
+[sub_resource type="AtlasTexture" id=32]
+atlas = ExtResource( 8 )
+region = Rect2( 30, 0, 5, 5 )
+
+[sub_resource type="AtlasTexture" id=33]
+atlas = ExtResource( 8 )
+region = Rect2( 35, 0, 5, 5 )
+
+[sub_resource type="AtlasTexture" id=34]
+atlas = ExtResource( 8 )
+region = Rect2( 40, 0, 5, 5 )
+
+[sub_resource type="AtlasTexture" id=35]
+atlas = ExtResource( 8 )
+region = Rect2( 45, 0, 5, 5 )
+
+[sub_resource type="SpriteFrames" id=36]
+animations = [ {
+"frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
+[node name="PlankMaker" type="Node2D" groups=["Maker"]]
+z_index = -1
+script = ExtResource( 3 )
+
+[node name="LogBody" type="StaticBody2D" parent="."]
+position = Vector2( 100, 0 )
+
+[node name="LogSprite" type="Sprite" parent="LogBody"]
+texture = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LogBody"]
+position = Vector2( 2, 0 )
+shape = SubResource( 1 )
+
+[node name="LogPickupArea" type="Area2D" parent="LogBody"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LogBody/LogPickupArea"]
+modulate = Color( 0.454902, 1, 0, 1 )
+position = Vector2( -10, 1 )
+shape = SubResource( 2 )
+
+[node name="Logs" type="Node2D" parent="."]
+
+[node name="SawBody" type="StaticBody2D" parent="."]
+position = Vector2( 0, -8 )
+
+[node name="SawSprite" type="AnimatedSprite" parent="SawBody"]
+frames = SubResource( 3 )
+animation = "Spin"
+playing = true
+offset = Vector2( 0, 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SawBody"]
+position = Vector2( 0, 3.5 )
+shape = SubResource( 8 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LogDropboffArea" type="Area2D" parent="SawBody"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SawBody/LogDropboffArea"]
+modulate = Color( 0, 1, 0.0392157, 1 )
+position = Vector2( 14.5, 9 )
+shape = SubResource( 21 )
+
+[node name="LogMask" type="Light2D" parent="SawBody"]
+position = Vector2( -21, 2 )
+scale = Vector2( 0.65625, 0.265625 )
+texture = ExtResource( 5 )
+energy = 0.0
+mode = 3
+range_item_cull_mask = 32
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlankMask" type="Light2D" parent="SawBody"]
+position = Vector2( 19, 3 )
+scale = Vector2( 0.59375, 0.296875 )
+texture = ExtResource( 5 )
+energy = 0.0
+mode = 3
+range_item_cull_mask = 64
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="CuttingLog" type="Node2D" parent="SawBody"]
+visible = false
+position = Vector2( 22, 2 )
+z_index = 1
+
+[node name="PlankSprite" type="Sprite" parent="SawBody/CuttingLog"]
+light_mask = 64
+position = Vector2( 0, -5 )
+texture = ExtResource( 6 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LogSprite" type="Sprite" parent="SawBody/CuttingLog"]
+light_mask = 32
+texture = ExtResource( 4 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="LogCut" type="AnimationPlayer" parent="SawBody"]
+anims/LogCut = SubResource( 23 )
+
+[node name="PlankPile" type="StaticBody2D" parent="."]
+position = Vector2( -24, -3 )
+
+[node name="PlankSprite" type="AnimatedSprite" parent="PlankPile"]
+frames = SubResource( 15 )
+frame = 5
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="PlankCollider" type="CollisionShape2D" parent="PlankPile"]
+position = Vector2( 0, 5 )
+shape = SubResource( 24 )
+
+[node name="PlankLight" type="Light2D" parent="PlankPile"]
+position = Vector2( 0, 1 )
+scale = Vector2( 0.375, 0.21875 )
+texture = ExtResource( 5 )
+energy = 0.0
+mode = 3
+range_item_cull_mask = 2
+
+[node name="PlankPickupArea" type="Area2D" parent="PlankPile"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PlankPile/PlankPickupArea"]
+modulate = Color( 0.639216, 1, 0, 1 )
+position = Vector2( -0.5, 3 )
+shape = SubResource( 25 )
+
+[node name="Number" type="Node2D" parent="PlankPile"]
+position = Vector2( 0, -15 )
+script = ExtResource( 7 )
+
+[node name="Ones" type="AnimatedSprite" parent="PlankPile/Number"]
+position = Vector2( 2, 3 )
+frames = SubResource( 36 )
+
+[node name="Tens" type="AnimatedSprite" parent="PlankPile/Number"]
+position = Vector2( -3, 3 )
+frames = SubResource( 36 )
+
+[connection signal="body_entered" from="LogBody/LogPickupArea" to="." method="_on_LogPickupArea_body_entered"]
+[connection signal="body_exited" from="LogBody/LogPickupArea" to="." method="_on_LogPickupArea_body_exited"]
+[connection signal="body_entered" from="SawBody/LogDropboffArea" to="." method="_on_LogDropboffArea_body_entered"]
+[connection signal="animation_finished" from="SawBody/LogCut" to="." method="_on_LogCut_animation_finished"]
+[connection signal="body_entered" from="PlankPile/PlankPickupArea" to="." method="_on_PlankPickupArea_body_entered"]
+[connection signal="body_exited" from="PlankPile/PlankPickupArea" to="." method="_on_PlankPickupArea_body_exited"]

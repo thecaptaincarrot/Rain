@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PlankPile.png-b6dd83701edadac841b6c11526097ad8.stex"
+path="res://.import/Numerals.png-7df8e371c4ac2160161b1cf5093cf449.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PlankPile.png"
-dest_files=[ "res://.import/PlankPile.png-b6dd83701edadac841b6c11526097ad8.stex" ]
+source_file="res://Fonts/Numerals.png"
+dest_files=[ "res://.import/Numerals.png-7df8e371c4ac2160161b1cf5093cf449.stex" ]
 
 [params]
 
@@ -31,5 +31,5 @@ process/invert_color=false
 process/normal_map_invert_y=false
 stream=false
 size_limit=0
-detect_3d=true
+detect_3d=false
 svg/scale=1.0
