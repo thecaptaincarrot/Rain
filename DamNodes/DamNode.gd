@@ -30,11 +30,12 @@ func _on_NewDamage_timeout(): #Create new damage if there is an undamaged dam pi
 	undamaged.shuffle()
 	undamaged.front().damage()
 	
-	$NewDamage.wait_time = rand_range(9.0,12.0)
+	$NewDamage.wait_time = rand_range(12.0,14.0)
 
 
 func end_game():
 	$AudioStreamPlayer.play()
+	$NewDamage.stop()
 	for dam in $DamSections.get_children():
 		dam.game_over = true
 		dam.game_end()
@@ -61,9 +62,9 @@ func get_water_delta():
 			3:
 				water_delta += 0.5
 			4:
-				water_delta += 1.0
+				water_delta += .75
 			5:
-				water_delta += 1.5
+				water_delta += 1.0
 
 	
 	return water_delta

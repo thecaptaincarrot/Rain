@@ -60,13 +60,29 @@ region = Rect2( 96, 16, 16, 16 )
 atlas = ExtResource( 1 )
 region = Rect2( 112, 16, 16, 16 )
 
+[sub_resource type="AtlasTexture" id=12]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 16, 16 )
+
 [sub_resource type="AtlasTexture" id=61]
 atlas = ExtResource( 1 )
 region = Rect2( 48, 0, 16, 16 )
 
-[sub_resource type="AtlasTexture" id=12]
+[sub_resource type="AtlasTexture" id=66]
 atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 16, 16 )
+region = Rect2( 128, 48, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=67]
+atlas = ExtResource( 1 )
+region = Rect2( 128, 64, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=68]
+atlas = ExtResource( 1 )
+region = Rect2( 160, 64, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=69]
+atlas = ExtResource( 1 )
+region = Rect2( 192, 64, 32, 16 )
 
 [sub_resource type="AtlasTexture" id=13]
 atlas = ExtResource( 1 )
@@ -104,22 +120,6 @@ region = Rect2( 112, 32, 16, 16 )
 atlas = ExtResource( 1 )
 region = Rect2( 32, 0, 16, 16 )
 
-[sub_resource type="AtlasTexture" id=66]
-atlas = ExtResource( 1 )
-region = Rect2( 128, 48, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=67]
-atlas = ExtResource( 1 )
-region = Rect2( 128, 64, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=68]
-atlas = ExtResource( 1 )
-region = Rect2( 160, 64, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=69]
-atlas = ExtResource( 1 )
-region = Rect2( 192, 64, 32, 16 )
-
 [sub_resource type="AtlasTexture" id=54]
 atlas = ExtResource( 1 )
 region = Rect2( 0, 64, 16, 16 )
@@ -156,15 +156,20 @@ animations = [ {
 "name": "Run",
 "speed": 12.0
 }, {
+"frames": [ SubResource( 12 ) ],
+"loop": true,
+"name": "Stand",
+"speed": 5.0
+}, {
 "frames": [ SubResource( 61 ) ],
 "loop": true,
 "name": "LogStand",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 12 ) ],
+"frames": [ SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ), SubResource( 68 ), SubResource( 67 ) ],
 "loop": true,
-"name": "Stand",
-"speed": 5.0
+"name": "Dead",
+"speed": 4.0
 }, {
 "frames": [ SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ), SubResource( 20 ) ],
 "loop": true,
@@ -175,11 +180,6 @@ animations = [ {
 "loop": true,
 "name": "PlankStand",
 "speed": 5.0
-}, {
-"frames": [ SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ) ],
-"loop": true,
-"name": "Dead",
-"speed": 4.0
 }, {
 "frames": [ SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ) ],
 "loop": true,
@@ -208,8 +208,8 @@ offset = Vector2( 0, -6 )
 light_mask = 2
 position = Vector2( 1, 0 )
 frames = SubResource( 10 )
-animation = "PlankRun"
-frame = 1
+animation = "Dead"
+frame = 5
 playing = true
 offset = Vector2( -1, -8 )
 flip_h = true
@@ -244,6 +244,7 @@ volume_db = 5.0
 
 [node name="Hammer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+volume_db = -10.0
 
 [node name="LogDrag" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )

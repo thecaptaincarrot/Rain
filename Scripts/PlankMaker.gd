@@ -41,8 +41,8 @@ func _process(delta):
 func pickup_log():
 	var new_log = LOG.instance()
 	new_log.position = $LogBody/LogPickupArea.position
-	if !drag_left:
-		new_log.scale.x = -1
+#	if !drag_left:
+#		new_log.scale.x = -1
 	new_log.hide()
 	$Logs.add_child(new_log)
 	return new_log
@@ -111,6 +111,7 @@ func _on_LogDropboffArea_body_entered(body):
 func _on_LogCut_animation_finished(anim_name):
 	num_planks += 2
 	full = false
+	$AudioStreamPlayer.play()
 
 
 func _on_PlankPickupArea_body_entered(body):

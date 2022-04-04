@@ -4,6 +4,7 @@
 [ext_resource path="res://Fonts/Action.png" type="Texture" id=2]
 
 [node name="Credits" type="Node2D"]
+position = Vector2( 202, -81 )
 
 [node name="THIS CEASELESS RAIN" parent="." instance=ExtResource( 1 )]
 scale = Vector2( 4, 4 )

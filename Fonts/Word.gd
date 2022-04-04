@@ -29,7 +29,7 @@ func _process(delta):
 			if letter_to_number(letter):
 				new_letter.frame = letter_to_number(letter)
 			else:
-				print("I failed to find letter ", letter)
+				pass
 			new_letter.position.x = offset + i * 5.5
 			i += 1
 			add_child(new_letter)

@@ -37,7 +37,7 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	#Slowdown due to mud
-	mud_factor = 1.0 - (.4 * water_level / 100.0)
+	mud_factor = 1.0 - (.5 * water_level / 100.0)
 	acceleration = base_acceleration * mud_factor
 	drag_acceleration = base_drag_acceleration * mud_factor
 	

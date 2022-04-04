@@ -58,6 +58,8 @@ func game_end():
 	$Spill.show()
 	$Spill.play()
 	play("Damage6")
+	damage = 0
+	$DamageTimer.stop()
 
 
 func sink():

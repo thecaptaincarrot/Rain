@@ -60,7 +60,7 @@ region = Rect2( 112, 0, 16, 16 )
 
 [sub_resource type="SpriteFrames" id=27]
 animations = [ {
-"frames": [ SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ) ],
+"frames": [ SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 50 ), SubResource( 49 ), SubResource( 48 ) ],
 "loop": true,
 "name": "Float",
 "speed": 4.0
@@ -201,7 +201,7 @@ offset = Vector2( 0, -6 )
 [node name="Skin" type="AnimatedSprite" parent="."]
 frames = SubResource( 27 )
 animation = "Walk"
-frame = 4
+frame = 3
 playing = true
 offset = Vector2( 0, -8 )
 
@@ -209,7 +209,7 @@ offset = Vector2( 0, -8 )
 modulate = Color( 1, 0.5, 0.508333, 1 )
 frames = SubResource( 36 )
 animation = "Walk"
-frame = 3
+frame = 2
 playing = true
 offset = Vector2( 0, -8 )
 
@@ -218,7 +218,7 @@ modulate = Color( 1, 0.82, 0.82, 1 )
 z_index = -1
 frames = SubResource( 45 )
 animation = "Walk"
-frame = 7
+frame = 6
 playing = true
 offset = Vector2( 0, -8 )
 

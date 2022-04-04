@@ -30,6 +30,7 @@ func _physics_process(delta):
 func kill():
 	alive = false
 	$Skin.play("Float")
+	$Skin.frame = randi() % 4
 	$Shirt.play("Float")
 	$Pants.play("Float")
 	$Shadow.hide()

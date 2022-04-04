@@ -28,22 +28,6 @@ region = Rect2( 128, 32, 32, 16 )
 atlas = ExtResource( 1 )
 region = Rect2( 160, 32, 32, 16 )
 
-[sub_resource type="AtlasTexture" id=72]
-atlas = ExtResource( 1 )
-region = Rect2( 192, 16, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=73]
-atlas = ExtResource( 1 )
-region = Rect2( 224, 16, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=74]
-atlas = ExtResource( 1 )
-region = Rect2( 256, 16, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=75]
-atlas = ExtResource( 1 )
-region = Rect2( 288, 16, 32, 16 )
-
 [sub_resource type="AtlasTexture" id=38]
 atlas = ExtResource( 1 )
 region = Rect2( 0, 64, 32, 16 )
@@ -67,34 +51,6 @@ region = Rect2( 128, 64, 32, 16 )
 [sub_resource type="AtlasTexture" id=43]
 atlas = ExtResource( 1 )
 region = Rect2( 160, 64, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=44]
-atlas = ExtResource( 1 )
-region = Rect2( 0, 48, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=45]
-atlas = ExtResource( 1 )
-region = Rect2( 32, 48, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=46]
-atlas = ExtResource( 1 )
-region = Rect2( 64, 48, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=47]
-atlas = ExtResource( 1 )
-region = Rect2( 96, 48, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=48]
-atlas = ExtResource( 1 )
-region = Rect2( 128, 48, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=49]
-atlas = ExtResource( 1 )
-region = Rect2( 160, 48, 32, 16 )
-
-[sub_resource type="AtlasTexture" id=23]
-atlas = ExtResource( 1 )
-region = Rect2( 0, 0, 32, 16 )
 
 [sub_resource type="AtlasTexture" id=26]
 atlas = ExtResource( 1 )
@@ -168,6 +124,50 @@ region = Rect2( 256, 0, 32, 16 )
 atlas = ExtResource( 1 )
 region = Rect2( 288, 0, 32, 16 )
 
+[sub_resource type="AtlasTexture" id=44]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 48, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=45]
+atlas = ExtResource( 1 )
+region = Rect2( 32, 48, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=46]
+atlas = ExtResource( 1 )
+region = Rect2( 64, 48, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=47]
+atlas = ExtResource( 1 )
+region = Rect2( 96, 48, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=48]
+atlas = ExtResource( 1 )
+region = Rect2( 128, 48, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=49]
+atlas = ExtResource( 1 )
+region = Rect2( 160, 48, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=72]
+atlas = ExtResource( 1 )
+region = Rect2( 192, 16, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=73]
+atlas = ExtResource( 1 )
+region = Rect2( 224, 16, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=74]
+atlas = ExtResource( 1 )
+region = Rect2( 256, 16, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=75]
+atlas = ExtResource( 1 )
+region = Rect2( 288, 16, 32, 16 )
+
+[sub_resource type="AtlasTexture" id=23]
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 32, 16 )
+
 [sub_resource type="SpriteFrames" id=24]
 animations = [ {
 "frames": [ SubResource( 32 ), SubResource( 33 ), SubResource( 34 ), SubResource( 35 ), SubResource( 36 ), SubResource( 37 ) ],
@@ -175,25 +175,10 @@ animations = [ {
 "name": "Damage2",
 "speed": 8.0
 }, {
-"frames": [ SubResource( 72 ), SubResource( 73 ), SubResource( 74 ), SubResource( 75 ) ],
-"loop": true,
-"name": "Sink",
-"speed": 1.0
-}, {
 "frames": [ SubResource( 38 ), SubResource( 39 ), SubResource( 40 ), SubResource( 41 ), SubResource( 42 ), SubResource( 43 ) ],
 "loop": true,
 "name": "Damage4",
 "speed": 8.0
-}, {
-"frames": [ SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ) ],
-"loop": true,
-"name": "Damage3",
-"speed": 8.0
-}, {
-"frames": [ SubResource( 23 ) ],
-"loop": true,
-"name": "Damage0",
-"speed": 5.0
 }, {
 "frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ) ],
 "loop": true,
@@ -209,6 +194,21 @@ animations = [ {
 "loop": true,
 "name": "Damage5",
 "speed": 8.0
+}, {
+"frames": [ SubResource( 44 ), SubResource( 45 ), SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ) ],
+"loop": true,
+"name": "Damage3",
+"speed": 8.0
+}, {
+"frames": [ SubResource( 72 ), SubResource( 73 ), SubResource( 74 ), SubResource( 75 ) ],
+"loop": true,
+"name": "Sink",
+"speed": 1.0
+}, {
+"frames": [ SubResource( 23 ) ],
+"loop": true,
+"name": "Damage0",
+"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=50]

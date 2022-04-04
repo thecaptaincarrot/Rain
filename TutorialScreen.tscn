@@ -1,0 +1,109 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Fonts/Word.tscn" type="PackedScene" id=1]
+[ext_resource path="res://TutorialScreen.png" type="Texture" id=2]
+[ext_resource path="res://TutorialScreen.gd" type="Script" id=3]
+
+[node name="Tutorial" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.423529, 0.372549, 0.372549, 0.290196 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Move" parent="." instance=ExtResource( 1 )]
+position = Vector2( 188, 116 )
+text = "Move: Arrow keys or WASD"
+
+[node name="Action" parent="." instance=ExtResource( 1 )]
+position = Vector2( 187, 122 )
+text = "Action: Z or Space Bar"
+
+[node name="Start" parent="." instance=ExtResource( 1 )]
+visible = false
+modulate = Color( 1, 0.937255, 0, 1 )
+position = Vector2( 182, 147 )
+text = "Press Action to Start"
+
+[node name="Action2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 60, 171 )
+text = "Drag logs to the saw"
+
+[node name="Action3" parent="." instance=ExtResource( 1 )]
+position = Vector2( 247, 204 )
+text = "Pick up planks"
+
+[node name="Action4" parent="." instance=ExtResource( 1 )]
+position = Vector2( 247, 210 )
+text = "To bring to the dam"
+
+[node name="Action5" parent="." instance=ExtResource( 1 )]
+position = Vector2( 265, 66 )
+text = "If the dam breaks"
+
+[node name="Action6" parent="." instance=ExtResource( 1 )]
+position = Vector2( 265, 73 )
+text = "Its game over"
+
+[node name="Action7" parent="." instance=ExtResource( 1 )]
+position = Vector2( 56, 21 )
+text = "Evacuate as many"
+
+[node name="Action9" parent="." instance=ExtResource( 1 )]
+position = Vector2( 322, 22 )
+text = "WAter escaping the dam"
+
+[node name="Action10" parent="." instance=ExtResource( 1 )]
+position = Vector2( 315, 28 )
+text = "Will make the ground muddy"
+
+[node name="Action11" parent="." instance=ExtResource( 1 )]
+position = Vector2( 315, 34 )
+text = "And slow your movement"
+
+[node name="Action8" parent="." instance=ExtResource( 1 )]
+position = Vector2( 54, 28 )
+text = "As you can"
+
+[node name="Action14" parent="." instance=ExtResource( 1 )]
+position = Vector2( 54, 34 )
+text = "Before the rain"
+
+[node name="Action15" parent="." instance=ExtResource( 1 )]
+position = Vector2( 54, 40 )
+text = "Sweeps you away"
+
+[node name="Action12" parent="." instance=ExtResource( 1 )]
+position = Vector2( 252, 243 )
+scale = Vector2( 0.75, 0.75 )
+text = "The villager are evacuating"
+
+[node name="Action13" parent="." instance=ExtResource( 1 )]
+position = Vector2( 251, 250 )
+scale = Vector2( 0.75, 0.75 )
+text = "From the flood zone"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0
+one_shot = true
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
