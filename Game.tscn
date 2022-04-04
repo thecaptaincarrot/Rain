@@ -226,7 +226,7 @@ scale = Vector2( -1, 1 )
 drag_left = false
 
 [node name="SawSprite" parent="Planks/PlankMaker2/SawBody" index="0"]
-frame = 0
+frame = 2
 
 [node name="Number" parent="Planks/PlankMaker2/PlankPile" index="4"]
 scale = Vector2( -1, 1 )
@@ -345,6 +345,7 @@ script = ExtResource( 14 )
 light_mask = 512
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
+frame = 3
 playing = true
 
 [node name="AnimatedSprite191" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -352,7 +353,7 @@ light_mask = 512
 position = Vector2( 16, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 11
+frame = 2
 playing = true
 
 [node name="AnimatedSprite192" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -360,7 +361,7 @@ light_mask = 512
 position = Vector2( 32, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 1
 playing = true
 
 [node name="AnimatedSprite193" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -368,7 +369,7 @@ light_mask = 512
 position = Vector2( 48, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 1
 playing = true
 
 [node name="AnimatedSprite194" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -376,7 +377,7 @@ light_mask = 512
 position = Vector2( 64, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 1
 playing = true
 
 [node name="AnimatedSprite195" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -384,7 +385,6 @@ light_mask = 512
 position = Vector2( 80, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite196" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -392,7 +392,6 @@ light_mask = 512
 position = Vector2( 96, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite197" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -400,7 +399,7 @@ light_mask = 512
 position = Vector2( 112, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite198" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -408,7 +407,7 @@ light_mask = 512
 position = Vector2( 128, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite199" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -416,7 +415,7 @@ light_mask = 512
 position = Vector2( -128, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 1
 playing = true
 
 [node name="AnimatedSprite200" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -424,7 +423,6 @@ light_mask = 512
 position = Vector2( -112, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite201" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -432,7 +430,6 @@ light_mask = 512
 position = Vector2( -96, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite202" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -440,7 +437,6 @@ light_mask = 512
 position = Vector2( -80, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite203" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -448,7 +444,7 @@ light_mask = 512
 position = Vector2( -64, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite204" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -456,7 +452,7 @@ light_mask = 512
 position = Vector2( -48, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite205" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -464,7 +460,7 @@ light_mask = 512
 position = Vector2( -32, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite206" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -472,7 +468,7 @@ light_mask = 512
 position = Vector2( -16, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite207" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -480,7 +476,7 @@ light_mask = 512
 position = Vector2( 0, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 11
+frame = 2
 playing = true
 
 [node name="AnimatedSprite208" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -488,7 +484,7 @@ light_mask = 512
 position = Vector2( 16, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 1
 playing = true
 
 [node name="AnimatedSprite209" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -496,7 +492,7 @@ light_mask = 512
 position = Vector2( 32, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 1
 playing = true
 
 [node name="AnimatedSprite210" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -504,7 +500,6 @@ light_mask = 512
 position = Vector2( 48, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite211" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -512,7 +507,6 @@ light_mask = 512
 position = Vector2( 64, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite212" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -520,7 +514,7 @@ light_mask = 512
 position = Vector2( 80, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite213" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -528,7 +522,7 @@ light_mask = 512
 position = Vector2( 96, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite214" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -536,7 +530,7 @@ light_mask = 512
 position = Vector2( 112, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite215" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -544,7 +538,7 @@ light_mask = 512
 position = Vector2( 128, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite216" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -552,7 +546,7 @@ light_mask = 512
 position = Vector2( -128, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 1
 playing = true
 
 [node name="AnimatedSprite217" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -560,7 +554,6 @@ light_mask = 512
 position = Vector2( -112, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite218" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -568,7 +561,6 @@ light_mask = 512
 position = Vector2( -96, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite219" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -576,7 +568,6 @@ light_mask = 512
 position = Vector2( -80, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite220" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -584,7 +575,7 @@ light_mask = 512
 position = Vector2( -64, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite221" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -592,7 +583,7 @@ light_mask = 512
 position = Vector2( -48, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite222" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -600,7 +591,7 @@ light_mask = 512
 position = Vector2( -32, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite223" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -608,7 +599,7 @@ light_mask = 512
 position = Vector2( -16, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite224" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -616,7 +607,7 @@ light_mask = 512
 position = Vector2( 0, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 1
 playing = true
 
 [node name="AnimatedSprite225" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -624,7 +615,6 @@ light_mask = 512
 position = Vector2( 16, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite226" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -632,7 +622,6 @@ light_mask = 512
 position = Vector2( 32, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite227" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -640,7 +629,7 @@ light_mask = 512
 position = Vector2( 48, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite228" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -648,7 +637,7 @@ light_mask = 512
 position = Vector2( 64, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite229" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -656,7 +645,7 @@ light_mask = 512
 position = Vector2( 80, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite230" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -664,7 +653,7 @@ light_mask = 512
 position = Vector2( 96, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite231" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -672,7 +661,7 @@ light_mask = 512
 position = Vector2( 112, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite232" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -680,7 +669,7 @@ light_mask = 512
 position = Vector2( 128, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite233" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -688,7 +677,6 @@ light_mask = 512
 position = Vector2( -128, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite234" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -696,7 +684,7 @@ light_mask = 512
 position = Vector2( -112, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite235" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -704,7 +692,7 @@ light_mask = 512
 position = Vector2( -96, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite236" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -712,7 +700,7 @@ light_mask = 512
 position = Vector2( -80, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite237" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -720,7 +708,7 @@ light_mask = 512
 position = Vector2( -64, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite238" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -728,7 +716,7 @@ light_mask = 512
 position = Vector2( -48, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite239" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -736,7 +724,7 @@ light_mask = 512
 position = Vector2( -32, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite240" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -744,7 +732,7 @@ light_mask = 512
 position = Vector2( -16, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite241" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -752,7 +740,7 @@ light_mask = 512
 position = Vector2( 0, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 1
 playing = true
 
 [node name="AnimatedSprite242" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -760,7 +748,6 @@ light_mask = 512
 position = Vector2( 16, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite243" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -768,7 +755,6 @@ light_mask = 512
 position = Vector2( 32, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite244" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -776,7 +762,7 @@ light_mask = 512
 position = Vector2( 48, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite245" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -784,7 +770,7 @@ light_mask = 512
 position = Vector2( 64, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite246" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -792,7 +778,7 @@ light_mask = 512
 position = Vector2( 80, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite247" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -800,7 +786,7 @@ light_mask = 512
 position = Vector2( 96, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite248" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -808,7 +794,7 @@ light_mask = 512
 position = Vector2( 112, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite249" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -816,7 +802,7 @@ light_mask = 512
 position = Vector2( 128, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite250" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -824,7 +810,6 @@ light_mask = 512
 position = Vector2( -128, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite251" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -832,7 +817,7 @@ light_mask = 512
 position = Vector2( -112, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite252" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -840,7 +825,7 @@ light_mask = 512
 position = Vector2( -96, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite253" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -848,7 +833,7 @@ light_mask = 512
 position = Vector2( -80, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite254" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -856,7 +841,7 @@ light_mask = 512
 position = Vector2( -64, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite255" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -864,7 +849,7 @@ light_mask = 512
 position = Vector2( -48, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite256" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -872,7 +857,7 @@ light_mask = 512
 position = Vector2( -32, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite257" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -880,7 +865,7 @@ light_mask = 512
 position = Vector2( -16, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite258" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -888,7 +873,7 @@ light_mask = 512
 position = Vector2( 0, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 1
 playing = true
 
 [node name="AnimatedSprite259" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -896,7 +881,6 @@ light_mask = 512
 position = Vector2( 16, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite260" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -904,7 +888,6 @@ light_mask = 512
 position = Vector2( 32, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite261" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -912,7 +895,7 @@ light_mask = 512
 position = Vector2( 48, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite262" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -920,7 +903,7 @@ light_mask = 512
 position = Vector2( 64, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite263" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -928,7 +911,7 @@ light_mask = 512
 position = Vector2( 80, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite264" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -936,7 +919,7 @@ light_mask = 512
 position = Vector2( 96, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite265" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -944,7 +927,7 @@ light_mask = 512
 position = Vector2( 112, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite266" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -952,7 +935,7 @@ light_mask = 512
 position = Vector2( 128, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite267" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -960,7 +943,6 @@ light_mask = 512
 position = Vector2( -128, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite268" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -968,7 +950,7 @@ light_mask = 512
 position = Vector2( -112, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite269" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -976,7 +958,7 @@ light_mask = 512
 position = Vector2( -96, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite270" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -984,7 +966,7 @@ light_mask = 512
 position = Vector2( -80, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite271" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -992,7 +974,7 @@ light_mask = 512
 position = Vector2( -64, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite272" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1000,7 +982,7 @@ light_mask = 512
 position = Vector2( -48, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite273" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1008,7 +990,7 @@ light_mask = 512
 position = Vector2( -32, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite274" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1016,7 +998,7 @@ light_mask = 512
 position = Vector2( -16, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite275" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1024,7 +1006,7 @@ light_mask = 512
 position = Vector2( 0, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 10
+frame = 1
 playing = true
 
 [node name="AnimatedSprite276" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1032,7 +1014,6 @@ light_mask = 512
 position = Vector2( 16, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite277" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1040,7 +1021,6 @@ light_mask = 512
 position = Vector2( 32, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite278" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1048,7 +1028,7 @@ light_mask = 512
 position = Vector2( 48, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite279" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1056,7 +1036,7 @@ light_mask = 512
 position = Vector2( 64, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite280" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1064,7 +1044,7 @@ light_mask = 512
 position = Vector2( 80, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite281" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1072,7 +1052,7 @@ light_mask = 512
 position = Vector2( 96, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite282" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1080,7 +1060,7 @@ light_mask = 512
 position = Vector2( 112, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite283" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1088,7 +1068,7 @@ light_mask = 512
 position = Vector2( 128, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite284" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1096,7 +1076,6 @@ light_mask = 512
 position = Vector2( -128, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite285" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1104,7 +1083,7 @@ light_mask = 512
 position = Vector2( -112, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite286" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1112,7 +1091,7 @@ light_mask = 512
 position = Vector2( -96, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite287" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1120,7 +1099,7 @@ light_mask = 512
 position = Vector2( -80, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite288" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1128,7 +1107,7 @@ light_mask = 512
 position = Vector2( -64, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite289" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1136,7 +1115,7 @@ light_mask = 512
 position = Vector2( -48, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite290" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1144,7 +1123,7 @@ light_mask = 512
 position = Vector2( -32, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite291" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1152,7 +1131,7 @@ light_mask = 512
 position = Vector2( -16, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite292" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1160,7 +1139,6 @@ light_mask = 512
 position = Vector2( 0, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite293" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1168,7 +1146,7 @@ light_mask = 512
 position = Vector2( 16, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite294" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1176,7 +1154,7 @@ light_mask = 512
 position = Vector2( 32, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite295" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1184,7 +1162,7 @@ light_mask = 512
 position = Vector2( 48, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite296" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1192,7 +1170,7 @@ light_mask = 512
 position = Vector2( 64, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite297" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1200,7 +1178,7 @@ light_mask = 512
 position = Vector2( 80, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite298" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1208,7 +1186,7 @@ light_mask = 512
 position = Vector2( 96, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite299" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1216,7 +1194,7 @@ light_mask = 512
 position = Vector2( 112, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite300" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1224,7 +1202,7 @@ light_mask = 512
 position = Vector2( 128, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite301" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1232,7 +1210,7 @@ light_mask = 512
 position = Vector2( -128, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite302" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1240,7 +1218,7 @@ light_mask = 512
 position = Vector2( -112, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite303" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1248,7 +1226,7 @@ light_mask = 512
 position = Vector2( -96, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite304" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1256,7 +1234,7 @@ light_mask = 512
 position = Vector2( -80, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite305" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1264,7 +1242,7 @@ light_mask = 512
 position = Vector2( -64, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite306" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1272,7 +1250,7 @@ light_mask = 512
 position = Vector2( -48, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite307" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1280,7 +1258,7 @@ light_mask = 512
 position = Vector2( -32, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite308" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1288,7 +1266,7 @@ light_mask = 512
 position = Vector2( -16, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite309" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1296,7 +1274,6 @@ light_mask = 512
 position = Vector2( 0, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite310" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1304,7 +1281,7 @@ light_mask = 512
 position = Vector2( 16, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite311" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1312,7 +1289,7 @@ light_mask = 512
 position = Vector2( 32, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite312" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1320,7 +1297,7 @@ light_mask = 512
 position = Vector2( 48, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite313" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1328,7 +1305,7 @@ light_mask = 512
 position = Vector2( 64, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite314" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1336,7 +1313,7 @@ light_mask = 512
 position = Vector2( 80, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite315" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1344,7 +1321,7 @@ light_mask = 512
 position = Vector2( 96, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite316" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1352,7 +1329,7 @@ light_mask = 512
 position = Vector2( 112, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite317" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1360,7 +1337,7 @@ light_mask = 512
 position = Vector2( 128, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite318" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1368,7 +1345,7 @@ light_mask = 512
 position = Vector2( -128, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite319" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1376,7 +1353,7 @@ light_mask = 512
 position = Vector2( -112, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite320" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1384,7 +1361,7 @@ light_mask = 512
 position = Vector2( -96, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite321" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1392,7 +1369,7 @@ light_mask = 512
 position = Vector2( -80, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite322" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1400,7 +1377,7 @@ light_mask = 512
 position = Vector2( -64, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite323" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1408,7 +1385,7 @@ light_mask = 512
 position = Vector2( -48, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite324" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1416,7 +1393,7 @@ light_mask = 512
 position = Vector2( -32, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite325" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1424,7 +1401,7 @@ light_mask = 512
 position = Vector2( -16, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite326" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1432,7 +1409,6 @@ light_mask = 512
 position = Vector2( 0, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 9
 playing = true
 
 [node name="AnimatedSprite327" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1440,7 +1416,7 @@ light_mask = 512
 position = Vector2( 16, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite328" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1448,7 +1424,7 @@ light_mask = 512
 position = Vector2( 32, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite329" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1456,7 +1432,7 @@ light_mask = 512
 position = Vector2( 48, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite330" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1464,7 +1440,7 @@ light_mask = 512
 position = Vector2( 64, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite331" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1472,7 +1448,7 @@ light_mask = 512
 position = Vector2( 80, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite332" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1480,7 +1456,7 @@ light_mask = 512
 position = Vector2( 96, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite333" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1488,7 +1464,7 @@ light_mask = 512
 position = Vector2( 112, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite334" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1496,7 +1472,7 @@ light_mask = 512
 position = Vector2( 128, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite335" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1504,7 +1480,7 @@ light_mask = 512
 position = Vector2( -128, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite336" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1512,7 +1488,7 @@ light_mask = 512
 position = Vector2( -112, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite337" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1520,7 +1496,7 @@ light_mask = 512
 position = Vector2( -96, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite338" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1528,7 +1504,7 @@ light_mask = 512
 position = Vector2( -80, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite339" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1536,7 +1512,7 @@ light_mask = 512
 position = Vector2( -64, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite340" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1544,7 +1520,7 @@ light_mask = 512
 position = Vector2( -48, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite341" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1552,7 +1528,7 @@ light_mask = 512
 position = Vector2( -32, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite342" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1560,7 +1536,7 @@ light_mask = 512
 position = Vector2( -16, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite343" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1568,7 +1544,7 @@ light_mask = 512
 position = Vector2( 0, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite344" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1576,7 +1552,7 @@ light_mask = 512
 position = Vector2( 16, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite345" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1584,7 +1560,7 @@ light_mask = 512
 position = Vector2( 32, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite346" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1592,7 +1568,7 @@ light_mask = 512
 position = Vector2( 48, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite347" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1600,7 +1576,7 @@ light_mask = 512
 position = Vector2( 64, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite348" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1608,7 +1584,7 @@ light_mask = 512
 position = Vector2( 80, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite349" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1616,7 +1592,7 @@ light_mask = 512
 position = Vector2( 96, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite350" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1624,7 +1600,7 @@ light_mask = 512
 position = Vector2( 112, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite351" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1632,7 +1608,7 @@ light_mask = 512
 position = Vector2( 128, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite352" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1640,7 +1616,7 @@ light_mask = 512
 position = Vector2( -128, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite353" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1648,7 +1624,7 @@ light_mask = 512
 position = Vector2( -112, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite354" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1656,7 +1632,7 @@ light_mask = 512
 position = Vector2( -96, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite355" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1664,7 +1640,7 @@ light_mask = 512
 position = Vector2( -80, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite356" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1672,7 +1648,7 @@ light_mask = 512
 position = Vector2( -64, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite357" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1680,7 +1656,7 @@ light_mask = 512
 position = Vector2( -48, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite358" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1688,7 +1664,7 @@ light_mask = 512
 position = Vector2( -32, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite359" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1696,7 +1672,7 @@ light_mask = 512
 position = Vector2( -16, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite360" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1704,7 +1680,7 @@ light_mask = 512
 position = Vector2( 0, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 8
+frame = 11
 playing = true
 
 [node name="AnimatedSprite361" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1712,7 +1688,7 @@ light_mask = 512
 position = Vector2( 16, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite362" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1720,7 +1696,7 @@ light_mask = 512
 position = Vector2( 32, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite363" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1728,7 +1704,7 @@ light_mask = 512
 position = Vector2( 48, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite364" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1736,7 +1712,7 @@ light_mask = 512
 position = Vector2( 64, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite365" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1744,7 +1720,7 @@ light_mask = 512
 position = Vector2( 80, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite366" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1752,7 +1728,7 @@ light_mask = 512
 position = Vector2( 96, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite367" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1760,7 +1736,7 @@ light_mask = 512
 position = Vector2( 112, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite368" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1768,7 +1744,7 @@ light_mask = 512
 position = Vector2( 128, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite369" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1776,7 +1752,7 @@ light_mask = 512
 position = Vector2( -128, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite370" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1784,7 +1760,7 @@ light_mask = 512
 position = Vector2( -112, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite371" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1792,7 +1768,7 @@ light_mask = 512
 position = Vector2( -96, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite372" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1800,7 +1776,7 @@ light_mask = 512
 position = Vector2( -80, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite373" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1808,7 +1784,7 @@ light_mask = 512
 position = Vector2( -64, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite374" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1816,7 +1792,7 @@ light_mask = 512
 position = Vector2( -48, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite375" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1824,7 +1800,7 @@ light_mask = 512
 position = Vector2( -32, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite376" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1832,7 +1808,7 @@ light_mask = 512
 position = Vector2( -16, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite377" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1840,7 +1816,7 @@ light_mask = 512
 position = Vector2( 0, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite378" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1848,7 +1824,7 @@ light_mask = 512
 position = Vector2( 16, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite379" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1856,7 +1832,7 @@ light_mask = 512
 position = Vector2( 32, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite380" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1864,7 +1840,7 @@ light_mask = 512
 position = Vector2( 48, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite381" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1872,7 +1848,7 @@ light_mask = 512
 position = Vector2( 64, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite382" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1880,7 +1856,7 @@ light_mask = 512
 position = Vector2( 80, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite383" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1888,7 +1864,7 @@ light_mask = 512
 position = Vector2( 96, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite384" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1896,7 +1872,7 @@ light_mask = 512
 position = Vector2( 112, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite385" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1904,7 +1880,7 @@ light_mask = 512
 position = Vector2( 128, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite394" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1912,7 +1888,7 @@ light_mask = 512
 position = Vector2( 144, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite395" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1920,7 +1896,7 @@ light_mask = 512
 position = Vector2( 144, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite396" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1928,7 +1904,7 @@ light_mask = 512
 position = Vector2( 144, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite397" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1936,7 +1912,7 @@ light_mask = 512
 position = Vector2( 144, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite398" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1944,7 +1920,7 @@ light_mask = 512
 position = Vector2( 144, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite399" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1952,7 +1928,7 @@ light_mask = 512
 position = Vector2( 144, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite400" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1960,7 +1936,7 @@ light_mask = 512
 position = Vector2( 144, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite401" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1968,7 +1944,7 @@ light_mask = 512
 position = Vector2( 144, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite402" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1976,7 +1952,7 @@ light_mask = 512
 position = Vector2( 144, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite403" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1984,7 +1960,7 @@ light_mask = 512
 position = Vector2( 144, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite404" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -1992,7 +1968,7 @@ light_mask = 512
 position = Vector2( 144, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite405" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2000,7 +1976,7 @@ light_mask = 512
 position = Vector2( 144, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite406" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2008,7 +1984,7 @@ light_mask = 512
 position = Vector2( 160, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite407" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2016,7 +1992,7 @@ light_mask = 512
 position = Vector2( 160, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite408" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2024,7 +2000,7 @@ light_mask = 512
 position = Vector2( 160, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite409" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2032,7 +2008,7 @@ light_mask = 512
 position = Vector2( 160, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite410" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2040,7 +2016,7 @@ light_mask = 512
 position = Vector2( 160, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite411" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2048,7 +2024,7 @@ light_mask = 512
 position = Vector2( 160, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite412" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2056,7 +2032,7 @@ light_mask = 512
 position = Vector2( 160, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite413" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2064,7 +2040,7 @@ light_mask = 512
 position = Vector2( 160, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite414" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2072,7 +2048,7 @@ light_mask = 512
 position = Vector2( 160, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite415" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2080,7 +2056,7 @@ light_mask = 512
 position = Vector2( 160, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite416" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2088,7 +2064,7 @@ light_mask = 512
 position = Vector2( 160, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite417" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2096,7 +2072,7 @@ light_mask = 512
 position = Vector2( 160, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite418" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2104,7 +2080,7 @@ light_mask = 512
 position = Vector2( 176, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite419" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2112,7 +2088,7 @@ light_mask = 512
 position = Vector2( 176, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite420" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2120,7 +2096,7 @@ light_mask = 512
 position = Vector2( 176, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite421" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2128,7 +2104,7 @@ light_mask = 512
 position = Vector2( 176, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite422" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2136,7 +2112,7 @@ light_mask = 512
 position = Vector2( 176, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite423" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2144,7 +2120,7 @@ light_mask = 512
 position = Vector2( 176, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite424" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2152,7 +2128,7 @@ light_mask = 512
 position = Vector2( 176, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite425" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2160,7 +2136,7 @@ light_mask = 512
 position = Vector2( 176, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite426" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2168,7 +2144,7 @@ light_mask = 512
 position = Vector2( 176, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite427" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2176,7 +2152,7 @@ light_mask = 512
 position = Vector2( 176, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite428" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2184,7 +2160,7 @@ light_mask = 512
 position = Vector2( 176, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite429" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2192,7 +2168,7 @@ light_mask = 512
 position = Vector2( 176, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite430" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2200,7 +2176,7 @@ light_mask = 512
 position = Vector2( -176, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite431" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2208,7 +2184,7 @@ light_mask = 512
 position = Vector2( -176, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite432" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2216,7 +2192,7 @@ light_mask = 512
 position = Vector2( -176, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite433" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2224,7 +2200,7 @@ light_mask = 512
 position = Vector2( -176, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite434" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2232,7 +2208,7 @@ light_mask = 512
 position = Vector2( -176, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite435" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2240,7 +2216,7 @@ light_mask = 512
 position = Vector2( -176, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite436" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2248,7 +2224,7 @@ light_mask = 512
 position = Vector2( -176, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite437" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2256,7 +2232,7 @@ light_mask = 512
 position = Vector2( -176, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite438" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2264,7 +2240,7 @@ light_mask = 512
 position = Vector2( -176, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite439" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2272,7 +2248,7 @@ light_mask = 512
 position = Vector2( -176, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite440" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2280,7 +2256,7 @@ light_mask = 512
 position = Vector2( -176, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite441" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2288,7 +2264,7 @@ light_mask = 512
 position = Vector2( -176, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite442" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2296,7 +2272,7 @@ light_mask = 512
 position = Vector2( -160, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite443" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2304,7 +2280,7 @@ light_mask = 512
 position = Vector2( -160, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite444" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2312,7 +2288,7 @@ light_mask = 512
 position = Vector2( -160, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite445" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2320,7 +2296,7 @@ light_mask = 512
 position = Vector2( -160, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite446" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2328,7 +2304,7 @@ light_mask = 512
 position = Vector2( -160, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite447" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2336,7 +2312,7 @@ light_mask = 512
 position = Vector2( -160, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite448" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2344,7 +2320,7 @@ light_mask = 512
 position = Vector2( -160, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite449" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2352,7 +2328,7 @@ light_mask = 512
 position = Vector2( -160, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite450" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2360,7 +2336,7 @@ light_mask = 512
 position = Vector2( -160, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite451" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2368,7 +2344,7 @@ light_mask = 512
 position = Vector2( -160, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite452" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2376,7 +2352,7 @@ light_mask = 512
 position = Vector2( -160, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite453" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2384,7 +2360,7 @@ light_mask = 512
 position = Vector2( -160, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite454" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2392,7 +2368,7 @@ light_mask = 512
 position = Vector2( -144, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite455" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2400,7 +2376,7 @@ light_mask = 512
 position = Vector2( -144, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite456" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2408,7 +2384,7 @@ light_mask = 512
 position = Vector2( -144, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite457" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2416,7 +2392,7 @@ light_mask = 512
 position = Vector2( -144, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite458" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2424,7 +2400,7 @@ light_mask = 512
 position = Vector2( -144, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite459" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2432,7 +2408,7 @@ light_mask = 512
 position = Vector2( -144, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite460" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2440,7 +2416,7 @@ light_mask = 512
 position = Vector2( -144, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite461" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2448,7 +2424,7 @@ light_mask = 512
 position = Vector2( -144, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite462" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2456,7 +2432,7 @@ light_mask = 512
 position = Vector2( -144, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite463" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2464,7 +2440,7 @@ light_mask = 512
 position = Vector2( -144, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite464" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2472,7 +2448,7 @@ light_mask = 512
 position = Vector2( -144, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite465" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2480,7 +2456,7 @@ light_mask = 512
 position = Vector2( -144, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite386" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2488,7 +2464,7 @@ light_mask = 512
 position = Vector2( -128, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite387" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2496,7 +2472,7 @@ light_mask = 512
 position = Vector2( -112, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite388" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2504,7 +2480,7 @@ light_mask = 512
 position = Vector2( -96, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite389" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2512,7 +2488,7 @@ light_mask = 512
 position = Vector2( -80, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite390" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2520,7 +2496,7 @@ light_mask = 512
 position = Vector2( -64, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite391" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2528,7 +2504,7 @@ light_mask = 512
 position = Vector2( -48, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite392" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2536,7 +2512,7 @@ light_mask = 512
 position = Vector2( -32, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite393" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2544,7 +2520,7 @@ light_mask = 512
 position = Vector2( -16, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite466" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2552,7 +2528,7 @@ light_mask = 512
 position = Vector2( 0, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite467" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2560,7 +2536,7 @@ light_mask = 512
 position = Vector2( 16, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite468" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2568,7 +2544,7 @@ light_mask = 512
 position = Vector2( 32, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite469" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2576,7 +2552,7 @@ light_mask = 512
 position = Vector2( 48, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite470" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2584,7 +2560,7 @@ light_mask = 512
 position = Vector2( 64, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite471" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2592,7 +2568,7 @@ light_mask = 512
 position = Vector2( 80, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite472" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2600,7 +2576,7 @@ light_mask = 512
 position = Vector2( 96, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite473" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2608,7 +2584,7 @@ light_mask = 512
 position = Vector2( 112, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite474" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2616,7 +2592,7 @@ light_mask = 512
 position = Vector2( 128, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite475" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2624,7 +2600,7 @@ light_mask = 512
 position = Vector2( -128, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite476" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2632,7 +2608,7 @@ light_mask = 512
 position = Vector2( -112, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite477" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2640,7 +2616,7 @@ light_mask = 512
 position = Vector2( -96, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite478" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2648,7 +2624,7 @@ light_mask = 512
 position = Vector2( -80, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite479" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2656,7 +2632,7 @@ light_mask = 512
 position = Vector2( -64, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite480" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2664,7 +2640,7 @@ light_mask = 512
 position = Vector2( -48, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite481" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2672,7 +2648,7 @@ light_mask = 512
 position = Vector2( -32, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite482" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2680,7 +2656,7 @@ light_mask = 512
 position = Vector2( -16, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite483" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2688,7 +2664,7 @@ light_mask = 512
 position = Vector2( 0, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite484" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2696,7 +2672,7 @@ light_mask = 512
 position = Vector2( 16, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite485" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2704,7 +2680,7 @@ light_mask = 512
 position = Vector2( 32, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite486" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2712,7 +2688,7 @@ light_mask = 512
 position = Vector2( 48, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite487" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2720,7 +2696,7 @@ light_mask = 512
 position = Vector2( 64, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite488" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2728,7 +2704,7 @@ light_mask = 512
 position = Vector2( 80, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite489" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2736,7 +2712,7 @@ light_mask = 512
 position = Vector2( 96, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite490" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2744,7 +2720,7 @@ light_mask = 512
 position = Vector2( 112, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite491" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2752,7 +2728,7 @@ light_mask = 512
 position = Vector2( 128, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite492" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2760,7 +2736,7 @@ light_mask = 512
 position = Vector2( 144, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite493" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2768,7 +2744,7 @@ light_mask = 512
 position = Vector2( 144, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite494" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2776,7 +2752,7 @@ light_mask = 512
 position = Vector2( 160, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite495" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2784,7 +2760,7 @@ light_mask = 512
 position = Vector2( 160, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite496" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2792,7 +2768,7 @@ light_mask = 512
 position = Vector2( 176, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite497" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2800,7 +2776,7 @@ light_mask = 512
 position = Vector2( 176, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite498" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2808,7 +2784,7 @@ light_mask = 512
 position = Vector2( -176, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite499" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2816,7 +2792,7 @@ light_mask = 512
 position = Vector2( -176, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite500" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2824,7 +2800,7 @@ light_mask = 512
 position = Vector2( -160, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite501" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2832,7 +2808,7 @@ light_mask = 512
 position = Vector2( -160, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite502" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2840,7 +2816,7 @@ light_mask = 512
 position = Vector2( -144, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite503" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2848,7 +2824,7 @@ light_mask = 512
 position = Vector2( -144, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite504" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2856,7 +2832,7 @@ light_mask = 512
 position = Vector2( -128, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite505" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2864,7 +2840,7 @@ light_mask = 512
 position = Vector2( -112, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite506" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2872,7 +2848,7 @@ light_mask = 512
 position = Vector2( -96, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite507" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2880,7 +2856,7 @@ light_mask = 512
 position = Vector2( -80, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite508" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2888,7 +2864,7 @@ light_mask = 512
 position = Vector2( -64, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite509" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2896,7 +2872,7 @@ light_mask = 512
 position = Vector2( -48, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite510" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2904,7 +2880,7 @@ light_mask = 512
 position = Vector2( -32, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite511" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2912,7 +2888,7 @@ light_mask = 512
 position = Vector2( -16, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite512" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2920,7 +2896,7 @@ light_mask = 512
 position = Vector2( 0, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite513" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2928,7 +2904,7 @@ light_mask = 512
 position = Vector2( 16, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite514" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2936,7 +2912,7 @@ light_mask = 512
 position = Vector2( 32, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite515" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2944,7 +2920,7 @@ light_mask = 512
 position = Vector2( 48, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite516" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2952,7 +2928,7 @@ light_mask = 512
 position = Vector2( 64, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite517" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2960,7 +2936,7 @@ light_mask = 512
 position = Vector2( 80, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite518" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2968,7 +2944,7 @@ light_mask = 512
 position = Vector2( 96, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite519" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2976,7 +2952,7 @@ light_mask = 512
 position = Vector2( 112, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite520" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2984,7 +2960,7 @@ light_mask = 512
 position = Vector2( 128, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite521" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -2992,7 +2968,7 @@ light_mask = 512
 position = Vector2( -128, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite522" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3000,7 +2976,7 @@ light_mask = 512
 position = Vector2( -112, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite523" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3008,7 +2984,7 @@ light_mask = 512
 position = Vector2( -96, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite524" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3016,7 +2992,7 @@ light_mask = 512
 position = Vector2( -80, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite525" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3024,7 +3000,7 @@ light_mask = 512
 position = Vector2( -64, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite526" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3032,7 +3008,7 @@ light_mask = 512
 position = Vector2( -48, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite527" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3040,7 +3016,7 @@ light_mask = 512
 position = Vector2( -32, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite528" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3048,7 +3024,7 @@ light_mask = 512
 position = Vector2( -16, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite529" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3056,7 +3032,7 @@ light_mask = 512
 position = Vector2( 0, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite530" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3064,7 +3040,7 @@ light_mask = 512
 position = Vector2( 16, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite531" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3072,7 +3048,7 @@ light_mask = 512
 position = Vector2( 32, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite532" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3080,7 +3056,7 @@ light_mask = 512
 position = Vector2( 48, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite533" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3088,7 +3064,7 @@ light_mask = 512
 position = Vector2( 64, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite534" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3096,7 +3072,7 @@ light_mask = 512
 position = Vector2( 80, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite535" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3104,7 +3080,7 @@ light_mask = 512
 position = Vector2( 96, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite536" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3112,7 +3088,7 @@ light_mask = 512
 position = Vector2( 112, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite537" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3120,7 +3096,7 @@ light_mask = 512
 position = Vector2( 128, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite538" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3128,7 +3104,7 @@ light_mask = 512
 position = Vector2( 144, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite539" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3136,7 +3112,7 @@ light_mask = 512
 position = Vector2( 144, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite540" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3144,7 +3120,7 @@ light_mask = 512
 position = Vector2( 160, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite541" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3152,7 +3128,7 @@ light_mask = 512
 position = Vector2( 160, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite542" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3160,7 +3136,7 @@ light_mask = 512
 position = Vector2( 176, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite543" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3168,7 +3144,7 @@ light_mask = 512
 position = Vector2( 176, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite544" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3176,7 +3152,7 @@ light_mask = 512
 position = Vector2( -176, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite545" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3184,7 +3160,7 @@ light_mask = 512
 position = Vector2( -176, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite546" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3192,7 +3168,7 @@ light_mask = 512
 position = Vector2( -160, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite547" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3200,7 +3176,7 @@ light_mask = 512
 position = Vector2( -160, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite548" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3208,7 +3184,7 @@ light_mask = 512
 position = Vector2( -144, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite549" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3216,7 +3192,7 @@ light_mask = 512
 position = Vector2( -144, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite550" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3224,7 +3200,7 @@ light_mask = 512
 position = Vector2( -128, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite551" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3232,7 +3208,7 @@ light_mask = 512
 position = Vector2( -112, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite552" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3240,7 +3216,7 @@ light_mask = 512
 position = Vector2( -96, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite553" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3248,7 +3224,7 @@ light_mask = 512
 position = Vector2( -80, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite554" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3256,7 +3232,7 @@ light_mask = 512
 position = Vector2( -64, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite555" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3264,7 +3240,7 @@ light_mask = 512
 position = Vector2( -48, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite556" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3272,7 +3248,7 @@ light_mask = 512
 position = Vector2( -32, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite557" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3280,7 +3256,7 @@ light_mask = 512
 position = Vector2( -16, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite558" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3288,7 +3264,7 @@ light_mask = 512
 position = Vector2( 0, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite559" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3296,7 +3272,7 @@ light_mask = 512
 position = Vector2( 16, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite560" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3304,7 +3280,7 @@ light_mask = 512
 position = Vector2( 32, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite561" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3312,7 +3288,7 @@ light_mask = 512
 position = Vector2( 48, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite562" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3320,7 +3296,7 @@ light_mask = 512
 position = Vector2( 64, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite563" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3328,7 +3304,7 @@ light_mask = 512
 position = Vector2( 80, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite564" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3336,7 +3312,7 @@ light_mask = 512
 position = Vector2( 96, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite565" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3344,7 +3320,7 @@ light_mask = 512
 position = Vector2( 112, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite566" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3352,7 +3328,7 @@ light_mask = 512
 position = Vector2( 128, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite567" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3360,7 +3336,7 @@ light_mask = 512
 position = Vector2( -128, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite568" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3368,7 +3344,7 @@ light_mask = 512
 position = Vector2( -112, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite569" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3376,7 +3352,7 @@ light_mask = 512
 position = Vector2( -96, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite570" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3384,7 +3360,7 @@ light_mask = 512
 position = Vector2( -80, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite571" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3392,7 +3368,7 @@ light_mask = 512
 position = Vector2( -64, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite572" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3400,7 +3376,7 @@ light_mask = 512
 position = Vector2( -48, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite573" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3408,7 +3384,7 @@ light_mask = 512
 position = Vector2( -32, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite574" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3416,7 +3392,7 @@ light_mask = 512
 position = Vector2( -16, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite575" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3424,7 +3400,7 @@ light_mask = 512
 position = Vector2( 0, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite576" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3432,7 +3408,7 @@ light_mask = 512
 position = Vector2( 16, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite577" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3440,7 +3416,7 @@ light_mask = 512
 position = Vector2( 32, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite578" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3448,7 +3424,7 @@ light_mask = 512
 position = Vector2( 48, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite579" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3456,7 +3432,7 @@ light_mask = 512
 position = Vector2( 64, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite580" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3464,7 +3440,7 @@ light_mask = 512
 position = Vector2( 80, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite581" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3472,7 +3448,7 @@ light_mask = 512
 position = Vector2( 96, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite582" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3480,7 +3456,7 @@ light_mask = 512
 position = Vector2( 112, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite583" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3488,7 +3464,7 @@ light_mask = 512
 position = Vector2( 128, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite584" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3496,7 +3472,7 @@ light_mask = 512
 position = Vector2( 144, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite585" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3504,7 +3480,7 @@ light_mask = 512
 position = Vector2( 144, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite586" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3512,7 +3488,7 @@ light_mask = 512
 position = Vector2( 160, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite587" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3520,7 +3496,7 @@ light_mask = 512
 position = Vector2( 160, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite588" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3528,7 +3504,7 @@ light_mask = 512
 position = Vector2( 176, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="AnimatedSprite589" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3536,7 +3512,7 @@ light_mask = 512
 position = Vector2( 176, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="AnimatedSprite604" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3544,7 +3520,7 @@ light_mask = 512
 position = Vector2( 192, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite605" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3552,7 +3528,7 @@ light_mask = 512
 position = Vector2( 192, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite606" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3560,7 +3536,7 @@ light_mask = 512
 position = Vector2( 192, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite607" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3568,7 +3544,7 @@ light_mask = 512
 position = Vector2( 192, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite608" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3576,7 +3552,7 @@ light_mask = 512
 position = Vector2( 192, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite609" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3584,7 +3560,7 @@ light_mask = 512
 position = Vector2( 192, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite610" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3592,7 +3568,7 @@ light_mask = 512
 position = Vector2( 192, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite611" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3600,7 +3576,7 @@ light_mask = 512
 position = Vector2( 192, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite612" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3608,7 +3584,7 @@ light_mask = 512
 position = Vector2( 192, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite613" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3616,7 +3592,7 @@ light_mask = 512
 position = Vector2( 192, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite614" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3624,7 +3600,7 @@ light_mask = 512
 position = Vector2( 192, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite615" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3632,7 +3608,7 @@ light_mask = 512
 position = Vector2( 192, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite616" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3640,7 +3616,7 @@ light_mask = 512
 position = Vector2( 208, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 7
+frame = 10
 playing = true
 
 [node name="AnimatedSprite617" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3648,7 +3624,7 @@ light_mask = 512
 position = Vector2( 208, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite618" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3656,7 +3632,7 @@ light_mask = 512
 position = Vector2( 208, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite619" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3664,7 +3640,7 @@ light_mask = 512
 position = Vector2( 208, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite620" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3672,7 +3648,7 @@ light_mask = 512
 position = Vector2( 208, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite621" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3680,7 +3656,7 @@ light_mask = 512
 position = Vector2( 208, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite622" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3688,7 +3664,7 @@ light_mask = 512
 position = Vector2( 208, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite623" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3696,7 +3672,7 @@ light_mask = 512
 position = Vector2( 208, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite624" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3704,7 +3680,7 @@ light_mask = 512
 position = Vector2( 208, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite625" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3712,7 +3688,7 @@ light_mask = 512
 position = Vector2( 208, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite626" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3720,7 +3696,7 @@ light_mask = 512
 position = Vector2( 208, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite627" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3728,7 +3704,7 @@ light_mask = 512
 position = Vector2( 208, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite628" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3736,7 +3712,7 @@ light_mask = 512
 position = Vector2( 224, 0 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 6
+frame = 9
 playing = true
 
 [node name="AnimatedSprite629" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3744,7 +3720,7 @@ light_mask = 512
 position = Vector2( 224, 16 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite630" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3752,7 +3728,7 @@ light_mask = 512
 position = Vector2( 224, 32 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite631" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3760,7 +3736,7 @@ light_mask = 512
 position = Vector2( 224, 48 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite632" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3768,7 +3744,7 @@ light_mask = 512
 position = Vector2( 224, 64 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite633" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3776,7 +3752,7 @@ light_mask = 512
 position = Vector2( 224, 80 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite634" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3784,7 +3760,7 @@ light_mask = 512
 position = Vector2( 224, 96 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite635" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3792,7 +3768,7 @@ light_mask = 512
 position = Vector2( 224, 112 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite636" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3800,7 +3776,7 @@ light_mask = 512
 position = Vector2( 224, 128 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite637" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3808,7 +3784,7 @@ light_mask = 512
 position = Vector2( 224, 144 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite638" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3816,7 +3792,7 @@ light_mask = 512
 position = Vector2( 224, 160 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite639" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3824,7 +3800,7 @@ light_mask = 512
 position = Vector2( 224, 176 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite640" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3832,7 +3808,7 @@ light_mask = 512
 position = Vector2( 192, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite641" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3840,7 +3816,7 @@ light_mask = 512
 position = Vector2( 192, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite642" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3848,7 +3824,7 @@ light_mask = 512
 position = Vector2( 208, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite643" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3856,7 +3832,7 @@ light_mask = 512
 position = Vector2( 208, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite644" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3864,7 +3840,7 @@ light_mask = 512
 position = Vector2( 224, 192 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite645" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3872,7 +3848,7 @@ light_mask = 512
 position = Vector2( 224, 208 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite646" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3880,7 +3856,7 @@ light_mask = 512
 position = Vector2( 192, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite647" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3888,7 +3864,7 @@ light_mask = 512
 position = Vector2( 192, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite648" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3896,7 +3872,7 @@ light_mask = 512
 position = Vector2( 208, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite649" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3904,7 +3880,7 @@ light_mask = 512
 position = Vector2( 208, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite650" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3912,7 +3888,7 @@ light_mask = 512
 position = Vector2( 224, 224 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="AnimatedSprite651" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3920,7 +3896,7 @@ light_mask = 512
 position = Vector2( 224, 240 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="AnimatedSprite652" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3928,7 +3904,7 @@ light_mask = 512
 position = Vector2( 192, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite653" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3936,7 +3912,7 @@ light_mask = 512
 position = Vector2( 192, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite654" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3944,7 +3920,7 @@ light_mask = 512
 position = Vector2( 208, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite655" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3952,7 +3928,7 @@ light_mask = 512
 position = Vector2( 208, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite656" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3960,7 +3936,7 @@ light_mask = 512
 position = Vector2( 224, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="AnimatedSprite657" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3968,7 +3944,7 @@ light_mask = 512
 position = Vector2( 224, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="AnimatedSprite590" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3976,7 +3952,7 @@ light_mask = 512
 position = Vector2( -176, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite591" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3984,7 +3960,7 @@ light_mask = 512
 position = Vector2( -176, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite592" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -3992,7 +3968,7 @@ light_mask = 512
 position = Vector2( -160, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="AnimatedSprite593" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -4000,7 +3976,7 @@ light_mask = 512
 position = Vector2( -160, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="AnimatedSprite594" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -4008,7 +3984,7 @@ light_mask = 512
 position = Vector2( -144, 256 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="AnimatedSprite595" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -4016,7 +3992,7 @@ light_mask = 512
 position = Vector2( -144, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 1
+frame = 4
 playing = true
 
 [node name="AnimatedSprite596" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -4024,7 +4000,7 @@ light_mask = 512
 position = Vector2( -128, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 5
+frame = 8
 playing = true
 
 [node name="AnimatedSprite597" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -4032,7 +4008,7 @@ light_mask = 512
 position = Vector2( -112, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite598" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -4040,7 +4016,7 @@ light_mask = 512
 position = Vector2( -96, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite599" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -4048,7 +4024,7 @@ light_mask = 512
 position = Vector2( -80, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 4
+frame = 7
 playing = true
 
 [node name="AnimatedSprite600" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -4056,7 +4032,7 @@ light_mask = 512
 position = Vector2( -64, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite601" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -4064,7 +4040,7 @@ light_mask = 512
 position = Vector2( -48, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite602" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -4072,7 +4048,7 @@ light_mask = 512
 position = Vector2( -32, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite603" type="AnimatedSprite" parent="Scenery/DeepRiver/Node2D"]
@@ -4080,7 +4056,7 @@ light_mask = 512
 position = Vector2( -16, 272 )
 scale = Vector2( 0.5, 0.5 )
 frames = SubResource( 13 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="CliffMaskLeft" type="Light2D" parent="Scenery/DeepRiver"]

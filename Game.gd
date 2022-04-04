@@ -90,7 +90,8 @@ func _on_Player_Footprint():
 func EvacueeFootprint(place):
 	var new_print = PRINT.instance()
 	new_print.position = place
-	$Footprints.add_child(new_print)
+	if len($Footprints.get_children()) < 2000:
+		$Footprints.add_child(new_print)
 
 
 func _on_ResetTimer_timeout():

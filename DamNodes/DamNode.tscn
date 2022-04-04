@@ -18,6 +18,8 @@ __meta__ = {
 
 [node name="DamPiece" parent="DamSections" instance=ExtResource( 2 )]
 position = Vector2( -112, 8 )
+animation = "Sink"
+frame = 0
 
 [node name="DamPiece2" parent="DamSections" instance=ExtResource( 2 )]
 position = Vector2( -80, 8 )
