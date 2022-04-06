@@ -4,7 +4,7 @@
 
 [node name="Footprints2" type="Line2D"]
 z_index = -1
-width = 7.0
+width = 5.0
 default_color = Color( 1, 1, 1, 1 )
 texture = ExtResource( 1 )
 texture_mode = 1
