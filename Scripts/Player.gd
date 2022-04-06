@@ -232,16 +232,20 @@ func _on_PlayerSprite_frame_changed(): #Sound Effects
 			$Hammer.play()
 	
 	if $PlayerSprite.animation == "Run" or $PlayerSprite.animation == "PlankRun":
+		if $PlayerSprite.frame % 2 == 0:
+			emit_signal("Footprint", position)
+		
 		if $PlayerSprite.frame == 0  or $PlayerSprite.frame == 4:
 			$FootSteps.play()
-			emit_signal("Footprint")
 	
 	if $PlayerSprite.animation == "LogPull":
 		if !$LogDrag.is_playing():
 			print("This should only happen like once")
 			$LogDrag.play()
+		if $PlayerSprite.frame % 3 == 0:
+			emit_signal("Footprint", position)
 		if $PlayerSprite.frame == 0  or $PlayerSprite.frame == 3:
 			$FootSteps.play()
-			emit_signal("Footprint")
+			
 	else:
 		$LogDrag.stop()

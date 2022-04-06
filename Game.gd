@@ -1,11 +1,14 @@
 extends Node2D
 
+const LINE = preload("res://FootprintLine.tscn")
 const PLANK = preload("res://DroppedPlank.tscn")
 const PRINT = preload("res://FootPrints.tscn")
 
 var water_level = 0.0
 
 var points = 0
+
+onready var current_footprints = $Footprints/Footprints2
 
 var game_over = false
 var can_reset = false
@@ -81,16 +84,21 @@ func _on_Exit_area_entered(area):
 		print(points)
 
 
-func _on_Player_Footprint():
-	var new_print = PRINT.instance()
-	new_print.position = $Player.position
-	$Footprints.add_child(new_print)
+func _on_Player_Footprint(pos):
+#	var new_print = PRINT.instance()
+#	new_print.position = $Player.position
+#	$Footprints.add_child(new_print)
+	current_footprints.add_point(pos)
+	if current_footprints.get_point_count() > 4000:
+		var new_prints = LINE.instance()
+		current_footprints = new_prints
+		$Footprints.add_child(new_prints)
 
 
 func EvacueeFootprint(place):
-	var new_print = PRINT.instance()
-	new_print.position = place
-	if len($Footprints.get_children()) < 2000:
+	if len($Footprints.get_children()) < 1000:
+		var new_print = PRINT.instance()
+		new_print.position = place
 		$Footprints.add_child(new_print)
 
 
